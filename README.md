@@ -13,3 +13,12 @@ https://www.figma.com/proto/tLsWjHx7z64KdoTkdOGDxj/AD521---RD---Relevant-Managem
 
 Team : Vijay, Dhiraj, Saakshi, Medhanansh, Rahul
 QA : 
+
+Team Works
+
+Vijay : header,footer ,homepage
+Dhiraj : Aboutus Page
+Saakshi: Contact us page include modal
+Rahul: Services page
+Medhanash: Privacy-policy page
+
