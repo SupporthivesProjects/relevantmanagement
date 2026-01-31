@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="uiframe/css/font-awesome.min.css">
     <link rel="stylesheet" href="uiframe/css/animate.min.css">
     <link href="uiframe/css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/s-style.css">
   </head>
   <body>
   
