@@ -20,6 +20,8 @@
     <!-- Section 2 -->
     <section class="service_s2">
         <div class="container service_c2">
+        <img class="service_s2vline1" src="img/service_s2vline.png">
+        <img class="service_s2vline2" src="img/service_s2vline.png">
             <div class="service_c2card1">
                 <div class="service_c2card1textbar">
                     <h2 class="service_cardtitle">Structured Project
@@ -54,7 +56,56 @@
             </div>
         </div>
     </section>
-    <img class="mobile_none" style="height: 24px" src="img/partion_line.png">
+    <!-- Partion Line -->
+    <img class="mobile_none" style="height: 24px; width: 100%;" src="img/partion_line.png">
+    <!-- Section 3 -->
+     <section class="process-section">
+        <div class="process-container">
+
+            <!-- LEFT IMAGE -->
+            <div class="process-left">
+                <video autoplay muted loop playsinline class="service_s1video" style="width: 100%">
+                    <source style="width: 100%" src="img/service_s3.mp4" type="video/mp4">
+                </video>
+                <button type="button" class="btn service_s1btn w-100">View services below</button>
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="process-right">
+            <div class="process-item">
+                <h3>01. End-To-End Project Management</h3>
+                <p>Content here...</p>
+            </div>
+
+            <div class="process-item">
+                <h3>02. Project Planning & Scheduling</h3>
+                <p>Content here...</p>
+            </div>
+            <div class="process-item">
+                <h3>01. End-To-End Project Management</h3>
+                <p>Content here...</p>
+            </div>
+
+            <div class="process-item">
+                <h3>02. Project Planning & Scheduling</h3>
+                <p>Content here...</p>
+            </div>
+            <div class="process-item">
+                <h3>01. End-To-End Project Management</h3>
+                <p>Content here...</p>
+            </div>
+
+            <div class="process-item">
+                <h3>02. Project Planning & Scheduling</h3>
+                <p>Content here...</p>
+            </div>
+
+            <!-- repeat -->
+            </div>
+
+        </div>
+    </section>
+
 </main>
 
 <?php include 'includes/footer.php'; ?>
