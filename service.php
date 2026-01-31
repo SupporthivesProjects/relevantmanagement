@@ -67,7 +67,7 @@
                 <video autoplay muted loop playsinline class="service_s1video" style="width: 100%">
                     <source style="width: 100%" src="img/service_s3.mp4" type="video/mp4">
                 </video>
-                <button type="button" class="btn service_s1btn w-100">View services below</button>
+                <button type="button" class="btn service_s1btn w-100">Request consultation</button>
             </div>
 
             <!-- RIGHT CONTENT -->
@@ -95,15 +95,15 @@
                     <h3 class="process_number">02.</h3>
                     <div class="process_line"></div>
                     <div class="process_contentbar">
-                        <h1 class="process_title">End-To-End Project Management</h1>
+                        <h1 class="process_title">Project Planning & Scheduling</h1>
                         <div class="process_contentright">
-                            <p class="process_subtitle">We provide complete project oversight from initiation through delivery, acting as the central point of accountability across all stages. Our team aligns scope, timelines, budgets, resources, and stakeholders to ensure projects remain controlled, transparent, and focused on outcomes. By actively managing progress and decisions, we reduce uncertainty and keep delivery predictable.</p>
+                            <p class="process_subtitle">We develop structured project plans and detailed schedules that clearly define objectives, milestones, dependencies, and delivery timelines. Our planning approach creates visibility across teams, supports informed decision-making, and establishes realistic expectations from the outset. This foundation ensures projects progress efficiently and consistently meet deadlines.</p>
                             <div class="process_key">
                                 <p class="process_keytitle">Key Focus Areas</p>
                                 <ul class="custom-points">
-                                    <li>Full lifecycle project oversight</li>
-                                    <li>Integrated planning and execution</li>
-                                    <li>Single point of accountability</li>
+                                    <li>Project roadmaps and timelines</li>
+                                    <li>Milestone and dependency management</li>
+                                    <li>Delivery forecasting</li>
                                 </ul>
                             </div>
                         </div>
@@ -113,15 +113,15 @@
                     <h3 class="process_number">03.</h3>
                     <div class="process_line"></div>
                     <div class="process_contentbar">
-                        <h1 class="process_title">End-To-End Project Management</h1>
+                        <h1 class="process_title">Budget & Cost Control</h1>
                         <div class="process_contentright">
-                            <p class="process_subtitle">We provide complete project oversight from initiation through delivery, acting as the central point of accountability across all stages. Our team aligns scope, timelines, budgets, resources, and stakeholders to ensure projects remain controlled, transparent, and focused on outcomes. By actively managing progress and decisions, we reduce uncertainty and keep delivery predictable.</p>
+                            <p class="process_subtitle">We actively manage project finances to ensure budgets are planned accurately, monitored continuously, and protected throughout delivery. Through forecasting, reporting, and proactive cost control, we identify risks early and prevent overruns. Our approach ensures financial discipline while maintaining progress and quality.</p>
                             <div class="process_key">
                                 <p class="process_keytitle">Key Focus Areas</p>
                                 <ul class="custom-points">
-                                    <li>Full lifecycle project oversight</li>
-                                    <li>Integrated planning and execution</li>
-                                    <li>Single point of accountability</li>
+                                    <li>Budget planning and tracking</li>
+                                    <li>Cost forecasting and reporting</li>
+                                    <li>Financial risk management</li>
                                 </ul>
                             </div>
                         </div>
@@ -132,15 +132,15 @@
                     <h3 class="process_number">04.</h3>
                     <div class="process_line"></div>
                     <div class="process_contentbar">
-                        <h1 class="process_title">End-To-End Project Management</h1>
+                        <h1 class="process_title">Resource Management</h1>
                         <div class="process_contentright">
-                            <p class="process_subtitle">We provide complete project oversight from initiation through delivery, acting as the central point of accountability across all stages. Our team aligns scope, timelines, budgets, resources, and stakeholders to ensure projects remain controlled, transparent, and focused on outcomes. By actively managing progress and decisions, we reduce uncertainty and keep delivery predictable.</p>
+                            <p class="process_subtitle">We coordinate people, tools, and suppliers to ensure resources are allocated effectively across every project phase. By managing availability, capacity, and performance, we prevent delays caused by shortages or misalignment. Our structured approach supports efficient execution and maximizes productivity.</p>
                             <div class="process_key">
                                 <p class="process_keytitle">Key Focus Areas</p>
                                 <ul class="custom-points">
-                                    <li>Full lifecycle project oversight</li>
-                                    <li>Integrated planning and execution</li>
-                                    <li>Single point of accountability</li>
+                                    <li>Resource planning and allocation</li>
+                                    <li>Supplier coordination</li>
+                                    <li>Capacity management</li>
                                 </ul>
                             </div>
                         </div>
@@ -150,15 +150,15 @@
                     <h3 class="process_number">05.</h3>
                     <div class="process_line"></div>
                     <div class="process_contentbar">
-                        <h1 class="process_title">End-To-End Project Management</h1>
+                        <h1 class="process_title">Stakeholder Management</h1>
                         <div class="process_contentright">
-                            <p class="process_subtitle">We provide complete project oversight from initiation through delivery, acting as the central point of accountability across all stages. Our team aligns scope, timelines, budgets, resources, and stakeholders to ensure projects remain controlled, transparent, and focused on outcomes. By actively managing progress and decisions, we reduce uncertainty and keep delivery predictable.</p>
+                            <p class="process_subtitle">We act as the central communication point between all stakeholders, ensuring alignment, clarity, and accountability throughout the project lifecycle. Through structured updates and facilitated decision-making, we maintain momentum and prevent misunderstandings that can delay delivery.</p>
                             <div class="process_key">
                                 <p class="process_keytitle">Key Focus Areas</p>
                                 <ul class="custom-points">
-                                    <li>Full lifecycle project oversight</li>
-                                    <li>Integrated planning and execution</li>
-                                    <li>Single point of accountability</li>
+                                    <li>Central communication management</li>
+                                    <li>Stakeholder alignment</li>
+                                    <li>Decision facilitation</li>
                                 </ul>
                             </div>
                         </div>
@@ -169,15 +169,15 @@
                     <h3 class="process_number">06.</h3>
                     <div class="process_line"></div>
                     <div class="process_contentbar">
-                        <h1 class="process_title">End-To-End Project Management</h1>
+                        <h1 class="process_title">Risk & Process Control</h1>
                         <div class="process_contentright">
-                            <p class="process_subtitle">We provide complete project oversight from initiation through delivery, acting as the central point of accountability across all stages. Our team aligns scope, timelines, budgets, resources, and stakeholders to ensure projects remain controlled, transparent, and focused on outcomes. By actively managing progress and decisions, we reduce uncertainty and keep delivery predictable.</p>
+                            <p class="process_subtitle">We proactively identify potential risks, dependencies, and inefficiencies before they impact delivery. By implementing structured governance and control processes, we reduce uncertainty and protect project outcomes. Our approach ensures issues are managed early and progress remains steady.</p>
                             <div class="process_key">
                                 <p class="process_keytitle">Key Focus Areas</p>
                                 <ul class="custom-points">
-                                    <li>Full lifecycle project oversight</li>
-                                    <li>Integrated planning and execution</li>
-                                    <li>Single point of accountability</li>
+                                    <li>Risk identification and mitigation</li>
+                                    <li>Process governance</li>
+                                    <li>Performance monitoring</li>
                                 </ul>
                             </div>
                         </div>

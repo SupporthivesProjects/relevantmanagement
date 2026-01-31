@@ -185,7 +185,7 @@
 .process-left {
     width: 100%;
     position: sticky;
-    top: 0;
+    top: 60px;
     display: flex;
     flex-direction: column;
     padding: 144px 104px 104px 104px;
@@ -209,11 +209,20 @@
     padding-top: 88px;
     flex-direction: column;
     align-items: flex-start;
-    border-left: 1px solid var(--Base-04, #E9E9E9);
     background: var(--Base-Off-White, #FAFAFA);
     width: 100%;
 }
-
+.process_number{
+    color: var(--Base-Off-Black, #0F0F0F);
+    font-family: Geist;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    margin: 0px;
+}
 .process-item {
     display: flex;
     padding: 56px 104px;
@@ -362,6 +371,8 @@ margin: 0px;
     }
     .service_s2{
         padding: 24px;
+        border-top: 1px solid #E9E9E9;
+        border-bottom: 1px solid #E9E9E9;
     }
     .service_c2card1{
         flex-direction: column-reverse;
@@ -394,6 +405,35 @@ margin: 0px;
     .service_c2{
         gap: 24px;
     }
+    .process-container{
+        flex-direction: column;
+    }
+    .process-left video{
+        width: 100%!important;
+        height: 252px !important;
+    }
+    .process-left{
+        padding: 24px;
+        gap: 24px;
+    }
+    .process-right{
+        padding: 0px;
+    }
+    .process-item{
+        padding: 32px 24px;
+        gap: 24px;
+    }
+    .process-item1{
+        padding: 32px 24px;
+        gap: 24px;
+    }
+    .process_contentbar{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .process_title{
+        font-size: 32px;
+    }
 }
 @media (min-width: 1000px) and (max-width: 1099px) {
     .service_s1textbar{
@@ -404,6 +444,22 @@ margin: 0px;
     }
     .service_s1title{
         font-size: 36px;
+    }
+    .process_title{
+        max-width: 100%;
+    }
+    .process_contentbar{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .process-left{
+        padding: 144px 32px 104px 32px;
+    }
+    .process-item{
+        padding: 56px 32px;
+    }
+    .process-item1{
+        padding: 56px 32px;
     }
 }
 @media (min-width: 1100px) and (max-width: 1199px) {
@@ -416,6 +472,22 @@ margin: 0px;
     .service_s1title{
         font-size: 36px;
     }
+    .process_title{
+        max-width: 100%;
+    }
+    .process_contentbar{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .process-left{
+        padding: 144px 32px 104px 32px;
+    }
+    .process-item{
+        padding: 56px 32px;
+    }
+    .process-item1{
+        padding: 56px 32px;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1299px) {
     .service_s1textbar{
@@ -423,6 +495,22 @@ margin: 0px;
     }
     .service_s1textbarinner{
         padding: 56px;
+    }
+    .process_title{
+        max-width: 100%;
+    }
+    .process_contentbar{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .process-left{
+        padding: 144px 60px 104px 60px;
+    }
+    .process-item{
+        padding: 56px 48px;
+    }
+    .process-item1{
+        padding: 56px 48px;
     }
 }
 @media (min-width: 1300px) and (max-width: 1399px) {
@@ -432,10 +520,51 @@ margin: 0px;
     .service_s1textbarinner{
         padding: 56px;
     }
+    .process_title{
+        max-width: 100%;
+    }
+    .process_contentbar{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .process-left{
+        padding: 144px 60px 104px 60px;
+    }
+    .process-item{
+        padding: 56px 48px;
+    }
+    .process-item1{
+        padding: 56px 48px;
+    }
 }
 @media (min-width: 1400px) and (max-width: 1499px) {
+    .process_title{
+        max-width: 100%;
+    }
+    .process_contentbar{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .process-left{
+        padding: 144px 60px 104px 60px;
+    }
+    .process-item{
+        padding: 56px 48px;
+    }
+    .process-item1{
+        padding: 56px 48px;
+    }
 }
 @media (min-width: 1500px) and (max-width: 1599px) {
+    .process-left{
+        padding: 144px 60px 104px 60px;
+    }
+    .process-item{
+        padding: 56px 48px;
+    }
+    .process-item1{
+        padding: 56px 48px;
+    }
 }
 @media (min-width: 1600px) and (max-width: 1699px) {
     .process-left{
