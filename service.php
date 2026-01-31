@@ -2,9 +2,59 @@
 <?php include 'includes/header.php'; ?>
 
 <main>
-  <h2>Service Page</h2>
-  <p>Welcome to my websiteccfcvr</p>
-  
+    <!-- Section 1 -->
+    <section class="service_s1">
+        <video autoplay muted loop playsinline class="service_s1video" style="width: 100%">
+            <source style="width: 100%" src="img/service_s1.mp4" type="video/mp4">
+        </video>
+        <div class="service_c1">
+            <div class="service_s1textbar">
+                <div class="service_s1textbarinner">
+                    <h1 class="service_s1title">Structured Project Management For Predictable, High-Performance Delivery</h1>
+                    <p class="service_s1subtitle">We lead complex projects with clear ownership, disciplined planning, and precise execution, ensuring timelines, budgets, and outcomes remain fully controlled.</p>
+                    <button type="button" class="btn service_s1btn">View services below</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 2 -->
+    <section class="service_s2">
+        <div class="container service_c2">
+            <div class="service_c2card1">
+                <div class="service_c2card1textbar">
+                    <h2 class="service_cardtitle">Structured Project
+                    Delivery Framework</h2>
+                    <p class="service_cardsubtitle">
+                        Our leadership model is built around clear ownership, disciplined planning, and active control across every stage of delivery.
+                        We take responsibility for aligning scope, timelines, budgets, resources, and stakeholders, ensuring decisions are made quickly and progress remains steady.
+                        <br><br>
+                        By embedding ourselves within projects, we remove fragmentation, reduce risk, and create a single source of accountability that keeps delivery focused and predictable.
+                    </p>
+                </div>
+                <div class="service_c2card1imgbar">
+                    <video autoplay muted loop playsinline class="service_s1video" style="width: 100%">
+                        <source style="width: 100%" src="img/service_card1video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="service_c2card2">
+                <div class="service_c2card2imgbar">
+                    <video autoplay muted loop playsinline class="service_s1video" style="width: 100%">
+                        <source style="width: 100%" src="img/service_card2video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="service_c2card2textbar">
+                    <h2 class="service_cardtitle">Predictable Execution & Control</h2>
+                    <p class="service_cardsubtitle">
+                        We translate strategy into clear action through detailed planning, real-time tracking, and disciplined governance across every project phase.
+                        <br><br>
+                        Our team actively manages risks, dependencies, and performance to keep timelines on track and budgets protected. With continuous oversight and transparent reporting, clients always know where projects stand and what comes next. This structured execution model removes surprises, improves coordination, and ensures outcomes are delivered consistently and with confidence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img class="mobile_none" style="height: 24px" src="img/partion_line.png">
 </main>
 
 <?php include 'includes/footer.php'; ?>
