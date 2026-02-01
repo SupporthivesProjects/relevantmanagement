@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="uiframe/css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/rstyle.css">
-    <link rel="stylesheet" href="css/dhiraj.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/dhirajresponsive.css">
     <link rel="stylesheet" href="css/privacy.css">
     <link rel="stylesheet" href="css/rstyle.css">
+    <link rel="stylesheet" href="css/dhiraj.css">
+    <link rel="stylesheet" href="css/dhirajresponsive.css">
     <link rel="stylesheet" href="uiframe/css/font-awesome.min.css">
     <link rel="stylesheet" href="uiframe/css/animate.min.css">
     <link href="uiframe/css/aos.css" rel="stylesheet">
