@@ -12,13 +12,13 @@
                               <a href="index.php" class="footer-menu">Home</a>
                             </li>
                             <li>
-                              <a href="" class="footer-menu">about</a>
+                              <a href="aboutus.php" class="footer-menu">about</a>
                             </li>
                             <li>
-                              <a href="" class="footer-menu">services</a>
+                              <a href="service.php" class="footer-menu">services</a>
                             </li>
                             <li>
-                              <a href="" class="footer-menu">Privacy policy</a>
+                              <a href="privacy.html" class="footer-menu">Privacy policy</a>
                             </li>
                         </ul>
                       </div>
