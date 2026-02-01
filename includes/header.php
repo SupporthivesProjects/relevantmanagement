@@ -13,17 +13,19 @@
     <link rel="stylesheet" href="uiframe/css/slick.css">
     <link rel="stylesheet" href="uiframe/css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rstyle.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="uiframe/css/font-awesome.min.css">
     <link rel="stylesheet" href="uiframe/css/animate.min.css">
     <link href="uiframe/css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/s-style.css">
   </head>
   <body>
   
   <div class="main-div">
     <header class="header-top fixed-top" id="header-top">
       <nav class="navbar navbar-expand-lg">
-          <div class="container">
+          <div class="container p-0">
             <div class="logo-menu-btn">
               <a class="navbar-brand" href="#">
                 <img src="./img/logo.svg" alt="" class="img-fluid">
@@ -54,8 +56,12 @@
                     delivered with precision
                   </p>
                 </div>
-                <button class="btn btn-gold d-lg-flex d-md-flex d-none" type="submit">Get started</button>
-                <button class="btn btn-gold d-lg-none d-md-none d-flex" type="submit">Contact</button>
+                <button class="btn btn-gold d-lg-flex d-md-flex d-none btn-31" type="submit">
+                  <span class="text-container">
+                      <span class="text">Get started</span>
+                  </span>
+                </button>
+                <button class="btn btn-gold d-lg-none d-md-none d-flex btn-31" type="submit">Contact</button>
               </div>
             </div>
           </div>
