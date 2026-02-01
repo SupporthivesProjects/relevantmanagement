@@ -153,6 +153,10 @@
 }
 /* ---------------------------home------------------------------------ */
 @media only screen and (max-width: 600px) {
+    .home-banner {
+        padding: 0px 0px;
+        margin-top: 80px;
+    }
     .home-banner-content::after {
         content: "";
         background: url(../img/home-content-bg.png) no-repeat;
