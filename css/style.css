@@ -294,7 +294,10 @@ header{
 .home-banner{
   padding: 0px 0px;
 }
-
+.home-banner-content{
+  position: relative;
+  z-index: -1;
+}
 .home-banner-content h2{
     color: var(--Base-Off-Black, #0F0F0F);
     text-align: center;
