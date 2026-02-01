@@ -151,6 +151,298 @@
     }
 
 }
+/* ---------------------------home------------------------------------ */
+@media only screen and (max-width: 600px) {
+    .home-banner-content::after {
+        content: "";
+        background: url(../img/home-content-bg.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        width: 881px;
+        height: 1021px;
+        z-index: -1;
+        bottom: 0px;
+        display: none;
+    }
+    .home-banner img {
+        height: 285px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card-row {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 26px;
+        flex-direction: column;
+    }
+    .card-row p {
+        color: var(--Base-01, #383838);
+        text-align: center;
+        /* P/std */
+        font-family: Geist;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        opacity: 0.8;
+        line-height: 32.4px;
+        margin-bottom: 0px;
+    }
+    .card-row h5 {
+        margin-bottom: 8px;
+        color: var(--Base-Off-Black, #0F0F0F);
+        text-align: center;
+        font-family: Geist;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.5px;
+        text-transform: capitalize;
+    }
+    .card-row .card {
+        background: transparent;
+        border: 0px;
+        border-radius: 0px;
+        width: 327px;
+        margin: auto;
+    }
+    .how_ite-works {
+        height: auto;
+        padding-top: 55px;
+    }
+
+
+    .home-banner-content {
+        width: 856px;
+        padding: 24px 24px;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(250, 250, 250, 0.00);
+        /* background: linear-gradient(180deg, #FAFAFA 64.86%, #FFF 100%); */
+        position: relative;
+        max-width: 100%;
+    }
+    .home-banner-content h2 {
+        color: var(--Base-Off-Black, #0F0F0F);
+        text-align: center;
+        font-family: 'Geist';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -1px;
+        text-transform: capitalize;
+        margin-bottom: 16px;
+    }
+    .home-banner-content p {
+        color: var(--Brand-gold, #9E8361);
+        text-align: center;
+        font-family: 'Geist';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26.4px;
+        margin-bottom: 24px;
+    }
+    .left-black, .right-black {
+        background: var(--Base-Off-Black, #0F0F0F);
+        width: 40px;
+        height: 40px;
+        display: none;
+    }
+    .how-its-title h1 {
+        background: var(--Base-Off-Black, #0F0F0F);
+        display: flex;
+        padding: 14px 40px;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 8px;
+        flex: 1 0 0;
+        align-self: stretch;
+        max-width: 100%;
+        margin: auto;
+        color: var(--Base-Off-White, #FAFAFA);
+        text-align: center;
+        font-family: 'Geist';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -1px;
+        text-transform: capitalize;
+        height: 64px;
+    }
+    .how-its-title {
+        width: 1116px;
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 40px;
+        display: flex;
+        gap: 0px;
+        justify-content: center;
+        align-items: baseline;
+        position: relative;
+    }
+    .img-how img{
+        height: 64px;
+    }
+    .how-its-content-main .btn-gold {
+        width: 330px;
+        margin: auto;
+        margin-top: 8px;
+    }
+    .how_ite-works{
+        padding: 32px 24px;
+    }
+    .our-solution img{
+        height: 285px;
+    }
+    .img-how {
+        display: flex;
+        gap: 2px;
+        width: 100%;
+        max-width: 100%;
+        height: 64px;
+    }
+    .how_ite-works .card-row {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 32px;
+        flex-direction: column;
+    }
+    .our-solution {
+        padding: 0px 0px 0px;
+        margin-top: -10rem;
+    }
+    .our-solution .container {
+        padding: 40px 24px 32px;
+    }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #9E8361;
+    }
+    .owl-theme .owl-dots .owl-dot span {
+        width: 12px;
+        height: 13px;
+        margin: 5px 7px;
+        background: #E9E9E9;
+        display: block;
+        -webkit-backface-visibility: visible;
+        transition: opacity 200ms ease;
+        border-radius: 30px;
+    }
+    .our-solution h2 {
+        color: var(--Core-Off-Black, #221735);
+        text-align: center;
+        font-family: Geist;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -1px;
+        text-transform: capitalize;
+        margin-bottom: 32px;
+    }
+    
+    .build-delivery-content {
+        display: flex;
+        margin-top: 24px;
+        padding: 32px 24px 32px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        flex: 1 0 0;
+        border-radius: 4px;
+    }
+    .our-solution .card {
+        border: 0px;
+        background: transparent;
+        width: 357px;
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 32px;
+    }
+    .build-delivery-content h1 {
+        color: var(--Base-Off-Black, #0F0F0F);
+        font-family: 'Geist';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -1px;
+        text-transform: capitalize;
+        margin-bottom: 0px;
+    }
+
+
+    .build-for-delivery {
+        display: flex;
+        padding: 0px 0px;
+        position: relative;
+    }
+    .img-wrapper {
+        background: url(../img/Benefits-Image-mo.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 300px;
+    }
+    .build-for-delivery::after {
+        content: "";
+        background: url(../img/pattern-for-build-mo.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        height: 24px;
+        width: 100%;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        top: -32%;
+        margin: auto;
+        max-width: 100%;
+        z-index: 0;
+    }
+    .build-for-confidance-content {
+        width: 1280px;
+        padding: 32px 24px;
+        max-width: 100%;
+    }
+    
+
+
+    .row-colums {
+        display: flex;
+        gap: 24px;
+        margin: 32px 0px;
+        flex-direction: column;
+    }
+    .col-card {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .build-for-confidance-content h2 {
+        color: var(--Base-Off-Black, #0F0F0F);
+        font-family: 'Geist';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -1px;
+        text-transform: capitalize;
+        margin-bottom: 24px;
+    }
+    .build-for-confidance-content .btn{
+        width: 100%;
+    }
+
+
+}
 /* -------------------------------footer------------------------------- */
 @media only screen and (max-width: 600px) {
     .left-side-footer h2 {
