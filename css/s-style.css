@@ -215,7 +215,25 @@ letter-spacing: -0.5px;
 text-transform: capitalize;
          }
 
-
+.cont-modal{
+    display: flex;
+width: 450px;
+max-width: 450px;
+padding: 40px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 24px;
+border-radius: 8px;
+background: var(--Base-White, #FFF);
+}
+.body-cont{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+align-self: stretch;
+}
 
 
 
@@ -263,6 +281,9 @@ text-transform: capitalize;
 }
 .term-txt{
     text-align: center;
+}
+.cont-modal{
+    padding: 32px;
 }
 }
 

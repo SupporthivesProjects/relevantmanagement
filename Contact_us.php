@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
 <main class="contact-page container-fluid">
-  <div class="contact-cont container">
+  <div class="contact-cont container" data-aos="fade-up">
     <img src="img/mob-arrow.png" alt="" class="d-block d-md-none">
           <p class="g-txt">
             Contact us
@@ -30,7 +30,7 @@
                 </select>
             </div>
             <div class="n-a">
-                <textarea name="" id="" class="comment-box" placeholder="Comments"> </textarea>
+                <textarea name="" id="" class="comment-box" placeholder="Comments"></textarea>
             </div>
             <div class="n-a">
                 <div class="recapcha-line">
@@ -40,7 +40,7 @@
                   </div>
                   <div class="re-btn">
                     <img src="img/reCAPTCHA.png" alt="" class="recapcha">
-                    <button class="cont-btn btn">
+                    <button class="cont-btn btn" data-bs-toggle="modal" data-bs-target="#contsuccess">
                       <a href="#">Confirm</a>
                     </button>
                   </div>
@@ -48,7 +48,7 @@
             </div>
           </div>
           <img src="img/mob-pattern.png" alt="" class="d-block d-md-none" style="margin-bottom:40px;">
-          <div class="add-info w-100">
+          <div class="add-info w-100" data-aos="fade-up">
             <div class="add-line">
               <img src="img/Line.png" alt="">
               <p class="g-txt">
@@ -61,7 +61,7 @@
               <p class="btxt">Contact Address</p>
               <p class="term-txt" style="color:#9E8361;">
                 Relevant Management FZCO, Unit 78340-001, Building A1, 
-IFZA Business Park, Dubai Digital Park, Dubai Silicon Oasis, Dubai, UAE
+                IFZA Business Park, Dubai Digital Park, Dubai Silicon Oasis, Dubai, UAE
               </p>
             </div>
             <div class="add-cont">
@@ -75,4 +75,18 @@ IFZA Business Park, Dubai Digital Park, Dubai Silicon Oasis, Dubai, UAE
      </div>
 </main>
 
+<div class="modal fade" id="contsuccess" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content cont-modal">
+        <img src="img/modal-tick.png" alt="">
+        <div class="body-cont">
+        <p class="btxt">successfully submitted!</p>
+        <p style="text-align:center">Your message is now with our team. We appreciate you contacting Relevant Management FZCO and will respond as soon as possible.</p>
+        </div>
+         <button class="cont-btn btn" data-bs-dismiss="modal" style="width:250px;">
+            <a href="#">Close</a>
+          </button>
+    </div>
+  </div>
+</div>
 <?php include 'includes/footer.php'; ?>
