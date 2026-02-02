@@ -73,9 +73,9 @@
                 <video autoplay muted loop playsinline class="service_s1video" style="width: 100%">
                     <source style="width: 100%" src="img/service_s3.mp4" type="video/mp4">
                 </video>
-                <div class="mobile_none">
+                <div class="mobile_none w-100">
                     <div class="d-flex right-side-main" role="search">
-                        <button class="btn btn-gold d-lg-flex d-md-flex btn-31 ser_btn" type="submit">
+                        <button class="btn btn-gold d-lg-flex d-md-flex btn-31 ser_btn w-100" type="submit">
                         <span class="text-container">
                             <span class="text">Request consultation</span>
                         </span>
