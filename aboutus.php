@@ -125,11 +125,12 @@
                     </div>
                 </div>
                 <div class="linnnee2 d-lg-block d-md-block d-none"></div>
-                <div class="third_box3 d-lg-block d-md-block d-none">
+                <div class="third_box3">
                     <video class="right_vid2" width="100%" height="100%" autoplay muted loop>
                         <source src="img/clouds.mp4" type="">
                         Your browser does not support the video tag.
                     </video>
+                    <img src="img/about_mob.png" alt="" class="pattenn d-lg-none d-md-none d-block">
                 </div>
             </div>
 
