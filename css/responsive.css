@@ -18,10 +18,12 @@
         height: auto;
         display: flex;
         height: 72px;
-        padding: 13px 0px;
+        padding: 16px 0px;
         justify-content: space-between;
         align-items: center;
         align-self: center;
+        border-radius: 4px;
+
     }
     .navbar-brand img {
         width: 226px;
@@ -148,6 +150,9 @@
     }
     .navbar-toggler:focus{
         box-shadow: none;
+    }
+    .navbar-brand{
+        padding: 0px;
     }
 
 }
@@ -388,6 +393,7 @@
         font-family: Montserrat;
         font-size: 14px;
     }
+    
     .our-solution .card {
         border: 0px;
         background: transparent;
@@ -453,6 +459,7 @@
         width: 1280px;
         padding: 32px 35px;
         max-width: 100%;
+        background: var(--Base-Off-White, #FAFAFA);
     }
     .home-banner-content .btn {
         width: 327px;
@@ -536,7 +543,7 @@
         gap: 18px
     }
     .footer-div {
-        background: var(--Base-Off-White, #FAFAFA);
+        background: #fff;
         padding: 56px 24px 32px;
     }
     .right-side-footer .right-side-footer-div {

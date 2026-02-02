@@ -5,7 +5,9 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-12 col-sm-12 col-12 p-mo">
                   <div class="left-side-footer">
-                      <h2 class="hover-contact">Contact us. <img src="./img/down-arrow.svg" alt="img" class="img-fluid "></h2>
+                     <a href="" style="text-decoration:none">
+                       <h2 class="hover-contact">Contact us. <img src="./img/down-arrow.svg" alt="img" class="img-fluid "></h2>
+                     </a>
                       <div class="footer-menu">
                         <ul>
                             <li>

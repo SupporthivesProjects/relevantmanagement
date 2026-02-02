@@ -622,6 +622,8 @@ header{
     font-weight: 500;
     line-height: 180%;
     margin-bottom: 0px;
+    width: 458px;
+    max-width: 100%;
 }
 .img-wrapper{
   background: url(../img/img-wrapper.png) no-repeat;
@@ -634,6 +636,9 @@ header{
     padding: 80px;
     position: relative;
 }
+.build-for-delivery .container{
+        max-width: 1440px;
+    }
 .build-for-delivery::after {
     content: "";
     background: url(../img/pattern-for-build.png) no-repeat;
@@ -747,12 +752,12 @@ footer{
     line-height: 140%;
     letter-spacing: -1px;
     text-transform: capitalize;
-    transition: all .9s linear;
+    transition: all .5s linear;
 
 }
 
 .hover-contact img{
-  transition: filter 0.9s ease, transform 0.9s ease;
+  transition: filter 0.5s ease, transform 0.5s ease;
 
 }
 .left-side-footer h2:hover{
@@ -823,7 +828,7 @@ footer{
     text-align: center;
     justify-content: center;
     align-items: end;
-    gap: 144px;
+    gap: 133px;
 }
 .footer-div{
     padding: 72px 24px 72px 24px;
