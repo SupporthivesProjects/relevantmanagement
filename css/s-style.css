@@ -1,20 +1,63 @@
+/* Button (input-like) */
+.service-btn {
+  padding:0px;
+  text-align: left;
+  border: none;
+}
+
+/* Remove default Bootstrap caret */
+.service-btn::after {
+    border: none;
+  float: right;
+  margin-top: 10px;
+}
+
+/* Focus state */
+.service-btn:focus {
+  box-shadow: none;
+}
+
+/* Dropdown menu */
+.service-menu {
+padding: 24px;
+transform: translate(0px, 70px) !important;
+}
+
+/* Dropdown items */
+.service-menu .dropdown-item {
+  color: var(--Base-01, #383838);
+font-family: Geist;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+}
+
+/* Hover state */
+.service-menu .dropdown-item:hover {
+  color: var(--Brand-gold, #9E8361);
+  background: none;
+font-family: Geist;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 24px */
+}
 *{
     margin: 0px;
     padding: 0px;
 }
 .contact-page{
-    margin-top: 100px;
-    background: url(/img/Contact-bg.png) no-repeat;
-        background-position: center;
-        background-size: cover;
+    margin-top:0px;
+   padding: 0px;
         display: flex;
-        justify-content: center;
+        justify-content:space-between;
 }
 .contact-cont{
     display: flex;
 width: 1200px;
 max-width: 1200px;
-padding: 0 24px 104px 24px;
+padding: 0px 24px 104px 24px;
 flex-direction: column;
 align-items: center;
             margin-top: 80px;
@@ -65,6 +108,17 @@ padding: 20px 24px;
 align-items: flex-start;
 flex: 1 0 0;
         }
+        .services-box:focus{
+            border-radius: 2px;
+border: 1px solid var(--Base-04, #E9E9E9);
+background-color: var(--Base-Off-White, #FAFAFA);
+display: flex;
+height: 64px;
+padding: 20px 24px;
+align-items: flex-start;
+flex: 1 0 0;
+        }
+       
         .inp-box:hover,.comment-box:hover{
             display: flex;
 padding: 20px 32px;
@@ -274,16 +328,20 @@ align-self: stretch;
     gap: 24px;
 }
 .add-line img {
-    width: 18%;
+    width: 35px;
 }
 .add-line{
     gap: 14px;
 }
 .term-txt{
     text-align: center;
+    font-size: 15px;
 }
 .cont-modal{
     padding: 32px;
+}
+.cont-btn{
+    height: 48px;
 }
 }
 
