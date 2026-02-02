@@ -31,7 +31,7 @@
       <nav class="navbar navbar-expand-lg">
           <div class="container p-0">
             <div class="logo-menu-btn">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="/">
                 <img src="./img/logo.svg" alt="" class="img-fluid">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
