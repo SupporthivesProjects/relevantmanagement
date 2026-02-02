@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
-  font-family:'Gilroy-Black';
-  src: url(../fonts/Gilroy-Black.ttf);
+  font-family:'Satoshi';
+  src: url(../fonts/Satoshi-Regular.otf);
 }
 
 body{
   font-family: 'Geist';
 }
-
-
 
 @media (min-width: 576px){
   .container, .container-sm {
@@ -119,6 +117,144 @@ html {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+.btn-31,
+.btn-31 *,
+.btn-31 :after,
+.btn-31 :before,
+.btn-31:after,
+.btn-31:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-31 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #9E8361;
+  background-image: none;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-31:disabled {
+  cursor: default;
+}
+.btn-31:-moz-focusring {
+  outline: auto;
+}
+.btn-31 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-31 [hidden] {
+  display: none;
+}
+.btn-31 {
+  border-width: 1px;
+  position: relative;
+  height: 64px;
+  text-transform: uppercase;
+  color: var(--Base-White, #FFF);
+  text-align: center;
+
+  /* P/btn M */
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-31:before {
+  --progress: 100%;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    100% 0,
+    var(--progress) var(--progress),
+    0 100%,
+    100% 100%
+  );
+  clip-path: polygon(
+    100% 0,
+    var(--progress) var(--progress),
+    0 100%,
+    100% 100%
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+}
+.btn-31:hover:before {
+  --progress: 0%;
+}
+.btn-31 .text-container {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.btn-31 .text {
+  display: block;
+  font-weight: 900;
+  /* mix-blend-mode: difference; */
+  position: relative;
+  color: var(--Base-White, #FFF);
+  text-align: center;
+
+  /* P/btn M */
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.btn-31:hover .text {
+  -webkit-animation: move-up-alternate 0.3s ease forwards;
+  animation: move-up-alternate 0.3s ease forwards;
+  color: #0F0F0F;
+}
+.btn-31:hover {
+    border-radius: 2px;
+    border: 1px solid var(--Brand-gold, #9E8361);
+    background: var(--Base-White, #FFF);
+}
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 /* ---------------------------------------header-------------------------------- */
 header{
     border-bottom: 1px solid var(--Base-04, #E9E9E9);
@@ -154,6 +290,434 @@ header{
 .nav-item span{
   display: none;
 }
+/* ------------------------------section---------------------------------- */
+.home-banner{
+  padding: 0px 0px;
+  margin-top: 100px;
+}
+.home-banner-content{
+  position: relative;
+  z-index: -1;
+}
+.home-banner-content h2{
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+.home-banner-content .btn{
+    width: 300px;
+    height: 64px;
+}
+.home-banner-content {
+    width: 856px;
+    padding: 32px 80px 40px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(250, 250, 250, 0.00);
+    /* background: linear-gradient(180deg, #FAFAFA 64.86%, #FFF 100%); */
+    position: relative;
+    max-width: 100%;
+}
+.home-banner-content-main {
+    width: 672px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-banner-content::after {
+    content: "";
+    background: url(../img/home-content-bg.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 881px;
+    height: 1021px;
+    z-index: -1;
+    bottom: 0px;
+}
+.home-banner-content p{
+    color: var(--Brand-gold, #9E8361);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.4px;
+    margin-bottom: 24px;
+}
+
+.how_ite-works{
+    height: 956px;
+    padding-top: 55px;
+}
+.img-how{
+    display: flex;
+    gap: 2px;
+    width: 100%;
+    max-width: 100%;
+}
+.how-its-title {
+    width: 1116px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 88px;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+}
+.how-its-title::after{
+  content: "";
+  position:absolute;
+  background: url(../img/three-line.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 892px;
+  height: 747px;
+  top: 0px;
+  z-index: -1;
+}
+.how-its-content-main .btn-gold{
+    width: 330px;
+    margin: auto;
+}
+.how_ite-works .container{
+  position: relative;
+}
+.how_ite-works .container::after {
+    content: "";
+    background: url(../img/right-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    right: -12rem;
+    top: -53px;
+}
+.how_ite-works .container::before {
+    content: "";
+    background: url(../img/left-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    left: -12rem;
+    top: -53px;
+}
+
+.left-black, .right-black{
+    background: var(--Base-Off-Black, #0F0F0F);
+    width: 40px;
+    height: 40px;
+ }
+.how-its-title h1{
+    background: var(--Base-Off-Black, #0F0F0F);
+    display: flex;
+    padding: 32px 80px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    flex: 1 0 0;
+    align-self: stretch;
+    max-width: 100%;
+    margin: auto;
+    color: var(--Base-Off-White, #FAFAFA);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 56px */
+    letter-spacing: -1px;
+    text-transform: capitalize;
+}
+.card-row h5{
+    color: var(--Base-Off-Black, #0F0F0F);
+    font-family: 'Geist';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.card-row p{
+  color: var(--Base-01, #383838);
+  font-family: 'Geist';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.8;
+  line-height: 32.4px; /* 180% */
+}
+.card-row .card{
+  background: transparent;
+  border: 0px;
+  border-radius: 0px;
+}
+.how-its-content-main{
+    width: 880px;
+    max-width: 100%;
+    margin: auto;
+}
+.card-row {
+  display: flex;
+  gap: 133px;
+  margin-bottom: 66px;
+}
+.our-solution h6{
+    color: var(--Brand-gold, #9E8361);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.4px;
+    margin-bottom: 0px;
+}
+.our-solution {
+    padding: 0px 80px 80px;
+}
+.our-solution  .container{
+  padding: 80px 0px 40px;
+}
+.our-solution-bg{
+  background: #fff;
+}
+.our-solution .card h5{
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+.our-solution .card p{
+  color: var(--Brand-gold, #9E8361);
+  text-align: center;
+
+  /* P/std */
+  font-family: 'Geist';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin-bottom: 0px;
+}
+.our-solution .card {
+    border: 0px;
+    background: transparent;
+    width: 357px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.row-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+}
+.our-solution h2{
+    color: var(--Core-Off-Black, #221735);
+    text-align: center;
+    font-family: Geist;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.our-solution .icon-img{
+    border-radius: 100px;
+    background: var(--Base-Off-White, #FAFAFA);
+    display: flex;
+    width: 56px;
+    height: 56px;
+    padding: 8px 7.667px 8px 8.333px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+    margin-bottom: 16px;
+}
+.bg-div{
+  background: var(--Base-Off-White, #FAFAFA);
+}
+.build-delivery-content{
+    display: flex;
+    padding: 80px 80px 80px 104px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    border-radius: 4px;
+}
+.build-delivery-content h6{
+    color: var(--Brand-gold, #9E8361);
+    font-family: Geist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.4px;
+    margin-bottom: 0px;
+}
+.build-delivery-content h1{
+    color: var(--Base-Off-Black, #0F0F0F);
+    font-family: 'Geist';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.build-delivery-content p{
+    color: var(--Base-02, #666);
+    font-family: 'Satoshi';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%;
+    margin-bottom: 0px;
+}
+.img-wrapper{
+  background: url(../img/img-wrapper.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.build-for-delivery{
+    display: flex;
+    padding: 80px;
+    position: relative;
+}
+.build-for-delivery::after {
+    content: "";
+    background: url(../img/pattern-for-build.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;
+    max-width: 100%;
+    z-index: -1;
+}
+.build-for-confidance-content h6{
+    color: var(--Brand-gold, #9E8361);
+    font-family: 'Geist';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.4px;
+    margin-bottom: 0px;
+}
+.build-for-confidance-content h2{
+    color: var(--Base-Off-Black, #0F0F0F);
+    font-family: 'Geist';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+}
+.build-for-confidance-content p{
+  color: var(--Base-02, #666);
+  font-family: 'Geist';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin-bottom: 0px;
+}
+.row-colums{
+    display: flex;
+    gap: 48px;
+    margin: 40px 0px;
+}
+.col-card .card{
+  width: 375px;
+  max-width: 100%;
+  border: 0px;
+  background: transparent;
+} 
+.build-for-confidance-content{
+  width: 1280px;
+  padding: 104px 332px 104px 150px;
+  max-width:100%;
+}
+.row-colums h5{
+    color: var(--Base-Off-Black, #0F0F0F);
+    font-family: 'Geist';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.col-card{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.tick-h5{
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+.tick-h5 img{
+  width: 19.833px;
+  height: 17px;
+  max-width: 100%;
+}
+.build-for-confidance{
+  width: 1920px;
+  max-width: 100%;
+  padding: 0px 0px;
+}
+
+
 
 /* --------------------------------footer-------------------------- */
 .left-side-footer h2{
@@ -231,4 +795,1062 @@ header{
 .footer-div{
     padding: 72px 24px 72px 24px;
     background: var(--Base-Off-White, #FAFAFA);
+}
+
+
+/* ---------------------------------media------------------------------------------- */
+@media (min-width: 700px) and (max-width: 790px) {
+  .build-for-confidance-content {
+      width: 1280px;
+      padding: 60px 37px;
+      max-width: 100%;
+  }
+  .col-card .card {
+    width: 346px;
+    max-width: 100%;
+    border: 0px;
+    background: transparent;
+  }
+  .how-its-title {
+    width: 1154px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 37px;
+    display: flex;
+    gap: 31px;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+  }
+  .card-row {
+    display: flex;
+    gap: 78px;
+    margin-bottom: 30px;
+  }
+  .how-its-content-main {
+    width: 669px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .how-its-title::after{
+    display: none;
+  }
+  .row-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-wrapper {
+    background: url(../img/img-wrapper.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 537px;
+    width: 100%;
+    max-width: 96%;
+    margin: auto;
+  }
+
+
+}
+@media (min-width: 900px) and (max-width: 999px) {
+  .home-banner-content-main {
+      width: 498px;
+      max-width: 100%;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .home-banner-content::after {
+      content: "";
+      background: url(../img/home-content-bg.png) no-repeat;
+      background-position: 100% 100%;
+      background-size: contain;
+      position: absolute;
+      width: 457px;
+      height: 1021px;
+      z-index: -1;
+      bottom: 0px;
+  }
+  .home-banner-content {
+    width: 543px;
+    padding: 32px 80px 40px;
+  }
+  .home-banner-content h2 {
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 24px;
+  }
+  .home-banner-content p {
+    color: var(--Brand-gold, #9E8361);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 16px;
+  }
+  .build-for-confidance-content {
+    width: 1280px;
+    padding: 18px 17px;
+    max-width: 100%;
+  }
+  .col-card .card {
+    width: 290px;
+    max-width: 100%;
+    border: 0px;
+    background: transparent;
+  }
+  .our-solution .card {
+    border: 0px;
+    background: transparent;
+    width: 248px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .row-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-solution .card h5 {
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+  }
+  .our-solution .card p {
+    color: var(--Brand-gold, #9E8361);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 0px;
+  }
+  .row-colums {
+    display: flex;
+    gap: 23px;
+    margin: 40px 0px; 
+  }
+  .left-side-footer h2 {
+    font-size: 69px;
+  }
+  .build-delivery-content {
+    display: flex;
+    padding: 39px 34px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    border-radius: 4px;
+  }
+  .our-solution {
+    padding: 0px 30px 56px;
+  }
+   .how-its-title {
+    width: 850px;
+    margin-bottom: 42px;
+  }
+  .how-its-title::after {
+    content: "";
+    position: absolute;
+    background: url(../img/three-line.png) no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    width: 634px;
+    height: 708px;
+    top: -27px;
+    z-index: -1;
+  }
+  .how-its-content-main {
+    width: 599px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .card-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 14px;
+  }
+  .how_ite-works .container::after {
+    content: "";
+    background: url(../img/right-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    right: -1rem;
+    top: -53px;
+  }
+  .how_ite-works .container::before {
+    content: "";
+    background: url(../img/left-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    left: -1rem;
+    top: -53px;
+  }
+
+}
+@media (min-width: 1000px) and (max-width: 1080px) {
+  .home-banner-content-main {
+      width: 498px;
+      max-width: 100%;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .home-banner-content::after {
+      content: "";
+      background: url(../img/home-content-bg.png) no-repeat;
+      background-position: 100% 100%;
+      background-size: contain;
+      position: absolute;
+      width: 499px;
+      height: 1021px;
+      z-index: -1;
+      bottom: 0px;
+  }
+  .home-banner-content {
+    width: 543px;
+    padding: 32px 80px 40px;
+  }
+  .home-banner-content h2 {
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 24px;
+  }
+  .home-banner-content p {
+    color: var(--Brand-gold, #9E8361);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 16px;
+  }
+  .build-for-confidance-content {
+    width: 1280px;
+    padding: 57px 71px 74px 36px;
+    max-width: 100%;
+  }
+  .col-card .card {
+    width: 290px;
+    max-width: 100%;
+    border: 0px;
+    background: transparent;
+  }
+  .our-solution .card {
+    border: 0px;
+    background: transparent;
+    width: 279px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .row-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-solution .card h5 {
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+  }
+  .our-solution .card p {
+    color: var(--Brand-gold, #9E8361);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 0px;
+  }
+  .our-solution {
+    padding: 0px 30px 56px;
+  }
+  .how-its-title {
+    width: 850px;
+    margin-bottom: 42px;
+  }
+  .how-its-title::after {
+    content: "";
+    position: absolute;
+    background: url(../img/three-line.png) no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    width: 634px;
+    height: 708px;
+    top: -27px;
+    z-index: -1;
+  }
+  .how-its-content-main {
+    width: 599px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .card-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 14px;
+  }
+  .how_ite-works .container::after {
+    content: "";
+    background: url(../img/right-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    right: -1rem;
+    top: -53px;
+  }
+  .how_ite-works .container::before {
+    content: "";
+    background: url(../img/left-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    left: -1rem;
+    top: -53px;
+  }
+}
+
+@media (min-width: 1090px) and (max-width: 1180px) {
+  .home-banner-content-main {
+      width: 498px;
+      max-width: 100%;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .home-banner-content::after {
+      content: "";
+      background: url(../img/home-content-bg.png) no-repeat;
+      background-position: 100% 100%;
+      background-size: contain;
+      position: absolute;
+      width: 538px;
+      height: 1021px;
+      z-index: -1;
+      bottom: 0px;
+  }
+  .home-banner-content {
+    width: 653px;
+    padding: 32px 80px 40px;
+  }
+  .home-banner-content h2 {
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 32px;
+  }
+  .build-delivery-content {
+    display: flex;
+    padding: 50px 50px 50px 66px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    border-radius: 4px;
+  }
+  .build-for-confidance-content {
+    width: 1280px;
+    padding: 57px 71px 74px 36px;
+    max-width: 100%;
+  }
+  .col-card .card {
+    width: 310px;
+    max-width: 100%;
+    border: 0px;
+    background: transparent;
+  }
+  .our-solution .card {
+    border: 0px;
+    background: transparent;
+    width: 267px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .row-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-solution .card h5 {
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+  }
+  .our-solution .card p {
+    color: var(--Brand-gold, #9E8361);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 0px;
+  }
+  .our-solution {
+    padding: 0px 30px 56px;
+  }
+  .how-its-title {
+    width: 850px;
+  }
+  .how-its-title::after {
+    content: "";
+    position: absolute;
+    background: url(../img/three-line.png) no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    width: 634px;
+    height: 708px;
+    top: -27px;
+    z-index: -1;
+  }
+  .how-its-content-main {
+    width: 599px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .card-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 14px;
+  }
+  
+  .how-its-title {
+    width: 850px;
+    margin-bottom: 42px;
+  }
+  .how-its-title::after {
+    content: "";
+    position: absolute;
+    background: url(../img/three-line.png) no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    width: 634px;
+    height: 708px;
+    top: -27px;
+    z-index: -1;
+  }
+  .how-its-content-main {
+    width: 599px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .card-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 14px;
+  }
+  .how_ite-works .container::after {
+    content: "";
+    background: url(../img/right-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    right: -1rem;
+    top: -53px;
+  }
+  .how_ite-works .container::before {
+    content: "";
+    background: url(../img/left-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    left: -1rem;
+    top: -53px;
+  }
+  
+}
+
+@media (min-width: 1190px) and (max-width: 1280px) {
+  .home-banner-content-main {
+      width: 498px;
+      max-width: 100%;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .home-banner-content::after {
+    content: "";
+    background: url(../img/home-content-bg.png) no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    position: absolute;
+    width: 630px;
+    height: 1021px;
+    z-index: -1;
+    bottom: 0px;
+  }
+  .home-banner-content {
+    width: 653px;
+    padding: 32px 80px 40px;
+  }
+  .home-banner-content h2 {
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 32px;
+  }
+  .build-for-confidance-content {
+    width: 1280px;
+    padding:57px 48px 44px 36px;
+    max-width: 100%;
+  }
+  .build-delivery-content {
+    display: flex;
+    padding: 50px 50px 50px 66px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    border-radius: 4px;
+  }
+  .our-solution .card {
+    border: 0px;
+    background: transparent;
+    width: 285px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .row-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-solution .card h5 {
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+  }
+  .our-solution .card p {
+    color: var(--Brand-gold, #9E8361);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 0px;
+  }
+  .our-solution {
+    padding: 0px 41px 80px;
+  }
+  .how-its-title {
+    width: 850px;
+  }
+  .how-its-title::after {
+    content: "";
+    position: absolute;
+    background: url(../img/three-line.png) no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    width: 634px;
+    height: 708px;
+    top: -27px;
+    z-index: -1;
+  }
+  .how-its-content-main {
+    width: 599px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .card-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 14px;
+  }
+  .how_ite-works .container::after {
+    content: "";
+    background: url(../img/right-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    right: -1rem;
+    top: -53px;
+  }
+  .how_ite-works .container::before {
+    content: "";
+    background: url(../img/left-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    left: -1rem;
+    top: -53px;
+  }
+  
+}
+
+@media (min-width: 1290px) and (max-width: 1380px) {
+  .home-banner-content-main {
+      width: 498px;
+      max-width: 100%;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .home-banner-content h2 {
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 32px;
+  }
+  .home-banner-content::after {
+    content: "";
+    background: url(../img/home-content-bg.png) no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    position: absolute;
+    width: 630px;
+    height: 1021px;
+    z-index: -1;
+    bottom: 0px;
+  }
+  .home-banner-content {
+    width: 653px;
+    padding: 32px 80px 40px;
+  }
+  .build-for-confidance-content {
+    width: 1280px;
+    padding: 57px 71px 74px 36px;
+    max-width: 100%;
+  }
+  .build-delivery-content {
+    display: flex;
+    padding: 50px 50px 50px 66px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    border-radius: 4px;
+  }
+  .our-solution .card {
+    border: 0px;
+    background: transparent;
+    width: 285px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .row-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-solution .card h5 {
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+  }
+  .our-solution .card p {
+    color: var(--Brand-gold, #9E8361);
+    text-align: center;
+    font-family: 'Geist';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 0px;
+  }
+  .how-its-title {
+    width: 850px;
+  }
+  .how-its-title::after {
+    content: "";
+    position: absolute;
+    background: url(../img/three-line.png) no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    width: 634px;
+    height: 708px;
+    top: -27px;
+    z-index: -1;
+  }
+  .how-its-content-main {
+    width: 599px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .card-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 14px;
+  }
+  .how_ite-works .container::after {
+    content: "";
+    background: url(../img/right-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    right: -1rem;
+    top: -53px;
+  }
+  .how_ite-works .container::before {
+    content: "";
+    background: url(../img/left-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    left: -1rem;
+    top: -53px;
+  }
+}
+
+@media (min-width: 1390px) and (max-width: 1490px) {
+  .build-for-confidance-content {
+    width: 1280px;
+    padding: 104px 85px 104px 48px;
+    max-width: 100%;
+  }
+  .build-delivery-content {
+    display: flex;
+    padding: 50px 50px 50px 66px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    border-radius: 4px;
+  }
+  .home-banner-content-main {
+    width: 585px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-banner-content::after {
+    content: "";
+    background: url(../img/home-content-bg.png) no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    position: absolute;
+    width: 666px;
+    height: 1021px;
+    z-index: -1;
+    bottom: 0px;
+  }
+  .how-its-title {
+    width: 890px;
+  }
+  .how-its-title::after {
+    content: "";
+    position: absolute;
+    background: url(../img/three-line.png) no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    width: 671px;
+    height: 708px;
+    top: 0px;
+    z-index: -1;
+  }
+  .how-its-content-main {
+    width: 657px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .card-row {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 66px;
+  }
+  .how_ite-works .container::after {
+    content: "";
+    background: url(../img/right-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    right: -5rem;
+    top: -53px;
+  }
+  .how_ite-works .container::before {
+    content: "";
+    background: url(../img/left-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    left: -5rem;
+    top: -53px;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1590px) {
+  .home-banner-content::after {
+    content: "";
+    background: url(../img/home-content-bg.png) no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    position: absolute;
+    width: 716px;
+    height: 1021px;
+    z-index: -1;
+    bottom: 0px;
+  }
+  .home-banner-content {
+    width: 754px;
+  }
+  .how-its-title {
+    width: 950px;
+  }
+  .how-its-title::after {
+    content: "";
+    position: absolute;
+    background: url(../img/three-line.png) no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    width: 723px;
+    height: 743px;
+    top: 0px;
+    z-index: -1;
+  }
+  .how-its-content-main {
+    width: 713px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .card-row {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 66px;
+  }
+  .how_ite-works .container::after {
+    content: "";
+    background: url(../img/right-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    right: -7rem;
+    top: -53px;
+  }
+  .how_ite-works .container::before {
+    content: "";
+    background: url(../img/left-partical.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 164px;
+    height: 102px;
+    left: -7rem;
+    top: -53px;
+  }
+
+}
+@media (min-width: 1600px) and (max-width: 1690px) {
+  .home-banner-content::after {
+    content: "";
+    background: url(../img/home-content-bg.png) no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    position: absolute;
+    width: 731px;
+    height: 1021px;
+    z-index: -1;
+    bottom: 0px;
+  }
+  .how-its-title {
+    width: 960px;
+  }
+  .how-its-title::after {
+    content: "";
+    position: absolute;
+    background: url(../img/three-line.png) no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    width: 746px;
+    height: 743px;
+    top: 0px;
+    z-index: -1;
+  }
+  .how-its-content-main {
+    width: 732px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .card-row {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 66px;
+  }
+
+}
+@media (min-width: 1700px) and (max-width: 1790px) {
+  .home-banner-content::after {
+    content: "";
+    background: url(../img/home-content-bg.png) no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    position: absolute;
+    width: 731px;
+    height: 1021px;
+    z-index: -1;
+    bottom: 0px;
+  }
+  .how-its-title {
+    width: 960px;
+  }
+  .how-its-title::after {
+    content: "";
+    position: absolute;
+    background: url(../img/three-line.png) no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    width: 746px;
+    height: 743px;
+    top: 0px;
+    z-index: -1;
+  }
+  .how-its-content-main {
+    width: 732px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .card-row {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 66px;
+  }
+
+}
+@media (min-width: 1800px) and (max-width: 1890px) {
+  .home-banner-content::after {
+    content: "";
+    background: url(../img/home-content-bg.png) no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    position: absolute;
+    width: 831px;
+    height: 1021px;
+    z-index: -1;
+    bottom: 0px;
+  }
+  .how-its-title {
+    width: 1059px;
+  }
+  .how-its-title::after {
+      content: "";
+      position: absolute;
+      background: url(../img/three-line.png) no-repeat;
+      background-size: contain;
+      background-position: 100% 100%;
+      width: 841px;
+      height: 743px;
+      top: 0px;
+      z-index: -1;
+  }
+  .how-its-content-main {
+    width: 820px;
+    max-width: 100%;
+    margin: auto;
+  }
+
+}
+@media (min-width: 1930px) and (max-width: 5990px) {
+  .home-banner {
+      padding: 0px 0px;
+      width: 1920px;
+      margin: auto;
+      max-width: 100%;
+  }
+  .home-banner-content::after {
+    content: "";
+    background: url(../img/home-content-bg.png) no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    position: absolute;
+    width: 831px;
+    height: 1021px;
+    z-index: -1;
+    bottom: 0px;
+  }
 }
