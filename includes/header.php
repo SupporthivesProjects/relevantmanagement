@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav m-auto">
                 <li class="nav-item">
-                  <a class="nav-link "  href="#">Servics <span>[6]</span></a>
+                  <a class="nav-link  active"  href="#">Servics <span>[6]</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">About</a>
