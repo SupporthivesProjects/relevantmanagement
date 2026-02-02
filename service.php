@@ -12,7 +12,13 @@
                 <div class="service_s1textbarinner">
                     <h1 class="service_s1title">Structured Project Management For Predictable, High-Performance Delivery</h1>
                     <p class="service_s1subtitle">We lead complex projects with clear ownership, disciplined planning, and precise execution, ensuring timelines, budgets, and outcomes remain fully controlled.</p>
-                    <button type="button" class="btn service_s1btn">View services below</button>
+                    <div class="d-flex right-side-main" role="search">
+                        <button class="btn btn-gold d-lg-flex d-md-flex btn-31 ser_btn" type="submit">
+                        <span class="text-container">
+                            <span class="text">View&nbsp;services&nbsp;below</span>
+                        </span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,7 +74,13 @@
                     <source style="width: 100%" src="img/service_s3.mp4" type="video/mp4">
                 </video>
                 <div class="mobile_none">
-                    <button type="button" class="btn service_s1btn w-100 mobile_none">Request consultation</button>
+                    <div class="d-flex right-side-main" role="search">
+                        <button class="btn btn-gold d-lg-flex d-md-flex btn-31 ser_btn" type="submit">
+                        <span class="text-container">
+                            <span class="text">Request consultation</span>
+                        </span>
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -187,7 +199,13 @@
                 </div>
             </div>
             <div class="desktop_none service_btndiv">
-                <button type="button" class="btn service_s1btn w-100">Request consultation</button>
+                <div class="d-flex right-side-main" role="search">
+                        <button class="btn btn-gold d-lg-flex d-md-flex btn-31 ser_btn" type="submit">
+                        <span class="text-container">
+                            <span class="text">Request consultation</span>
+                        </span>
+                        </button>
+                    </div>
             </div>
 
         </div>
@@ -204,19 +222,33 @@ document.addEventListener("DOMContentLoaded", () => {
   let releasing = false;
 
   function handleScroll() {
+
+    /* 🚫 Disable on desktop */
+    if (window.innerWidth > 700) {
+      button.classList.remove("is-fixed", "is-static", "is-releasing");
+      releasing = false;
+      return;
+    }
+
     const sectionRect = section.getBoundingClientRect();
     const buttonHeight = button.offsetHeight;
     const viewportHeight = window.innerHeight;
 
-    // Inside section → fixed
-    if (sectionRect.top <= 0 && sectionRect.bottom > viewportHeight - buttonHeight) {
+    /* Inside section → fixed */
+    if (
+      sectionRect.top <= 0 &&
+      sectionRect.bottom > viewportHeight - buttonHeight
+    ) {
       button.classList.add("is-fixed");
       button.classList.remove("is-static", "is-releasing");
       releasing = false;
     }
 
-    // Section bottom reached → smooth release
-    else if (sectionRect.bottom <= viewportHeight - buttonHeight && !releasing) {
+    /* Section bottom reached → smooth release */
+    else if (
+      sectionRect.bottom <= viewportHeight - buttonHeight &&
+      !releasing
+    ) {
       releasing = true;
 
       button.classList.add("is-releasing");
@@ -225,10 +257,10 @@ document.addEventListener("DOMContentLoaded", () => {
         button.classList.remove("is-fixed", "is-releasing");
         button.classList.add("is-static");
         releasing = false;
-      }, 300); // must match CSS transition
+      }, 300); // keep in sync with CSS
     }
 
-    // Before section
+    /* Before section */
     else if (sectionRect.top > 0) {
       button.classList.remove("is-fixed", "is-static", "is-releasing");
       releasing = false;
@@ -237,8 +269,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", handleScroll);
   window.addEventListener("resize", handleScroll);
+  handleScroll(); // initial check
 });
 </script>
+
 
 
 

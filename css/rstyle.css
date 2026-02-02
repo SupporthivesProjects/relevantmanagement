@@ -328,6 +328,10 @@ margin: 0px;
   color: #666;
   line-height: 1;
 }
+.ser_btn{
+    width: max-content;
+    padding: 0px 56px;
+}
 
 
 
@@ -462,6 +466,7 @@ margin: 0px;
     position: static;
     transform: none;
   }
+  
 }
 @media (min-width: 1000px) and (max-width: 1099px) {
     .service_s1textbar{
