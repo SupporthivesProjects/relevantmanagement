@@ -292,9 +292,12 @@ header{
 .nav-item span{
   display: none;
 }
-.right-side-main .btn{
-   height:48px;
+.right-side-main .btn {
+    height: 48px;
+    width: 160px;
 }
+
+
 .navbar-nav .active{
       color: var(--Base-01, #383838);
       opacity: 0.5;
