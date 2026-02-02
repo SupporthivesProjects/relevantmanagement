@@ -1,3 +1,7 @@
+<?php
+  $currentPage = basename($_SERVER['PHP_SELF']);
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -41,13 +45,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav m-auto">
                 <li class="nav-item">
-                  <a class="nav-link  active"  href="service.php">Services <span>[6]</span></a>
+                  <a class="nav-link <?php if($currentPage == 'service.php') echo 'active'; ?>"  href="service.php">Services <span>[6]</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="aboutus.php">About</a>
+                  <a class="nav-link <?php if($currentPage == 'aboutus.php') echo 'active'; ?>" href="aboutus.php">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Contact_us.php">Contact</a>
+                  <a class="nav-link <?php if($currentPage == 'Contact_us.php') echo 'active'; ?>" href="Contact_us.php">Contact</a>
                 </li>
               </ul>
               <div class="d-flex right-side-main" role="search">
