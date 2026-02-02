@@ -8,7 +8,7 @@
             <source style="width: 100%" src="img/service_s1.mp4" type="video/mp4">
         </video>
         <div class="service_c1">
-            <div class="service_s1textbar">
+            <div class="service_s1textbar" data-aos="fade-up">
                 <div class="service_s1textbarinner">
                     <h1 class="service_s1title">Structured Project Management For Predictable, High-Performance Delivery</h1>
                     <p class="service_s1subtitle">We lead complex projects with clear ownership, disciplined planning, and precise execution, ensuring timelines, budgets, and outcomes remain fully controlled.</p>
@@ -22,7 +22,7 @@
         <div class="container service_c2">
         <img class="service_s2vline1" src="img/service_s2vline.png">
         <img class="service_s2vline2" src="img/service_s2vline.png">
-            <div class="service_c2card1">
+            <div class="service_c2card1" data-aos="fade-up">
                 <div class="service_c2card1textbar">
                     <h2 class="service_cardtitle">Structured Project
                     Delivery Framework</h2>
@@ -39,7 +39,7 @@
                     </video>
                 </div>
             </div>
-            <div class="service_c2card2">
+            <div class="service_c2card2" data-aos="fade-up">
                 <div class="service_c2card2imgbar">
                     <video autoplay muted loop playsinline class="service_s1video" style="width: 100%">
                         <source style="width: 100%" src="img/service_card2video.mp4" type="video/mp4">
@@ -63,7 +63,7 @@
         <div class="process-container">
 
             <!-- LEFT IMAGE -->
-            <div class="process-left">
+            <div class="process-left" data-aos="fade-up">
                 <video autoplay muted loop playsinline class="service_s1video" style="width: 100%">
                     <source style="width: 100%" src="img/service_s3.mp4" type="video/mp4">
                 </video>
@@ -72,7 +72,7 @@
 
             <!-- RIGHT CONTENT -->
             <div class="process-right">
-                <div class="process-item">
+                <div class="process-item" data-aos="fade-up">
                     <h3 class="process_number">01.</h3>
                     <div class="process_line"></div>
                     <div class="process_contentbar">
@@ -91,7 +91,7 @@
                     </div>
                 </div>
 
-                <div class="process-item1">
+                <div class="process-item1" data-aos="fade-up">
                     <h3 class="process_number">02.</h3>
                     <div class="process_line"></div>
                     <div class="process_contentbar">
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="process-item">
+                <div class="process-item" data-aos="fade-up">
                     <h3 class="process_number">03.</h3>
                     <div class="process_line"></div>
                     <div class="process_contentbar">
@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="process-item1">
+                <div class="process-item1" data-aos="fade-up">
                     <h3 class="process_number">04.</h3>
                     <div class="process_line"></div>
                     <div class="process_contentbar">
@@ -146,7 +146,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="process-item">
+                <div class="process-item" data-aos="fade-up">
                     <h3 class="process_number">05.</h3>
                     <div class="process_line"></div>
                     <div class="process_contentbar">
@@ -165,7 +165,7 @@
                     </div>
                 </div>
 
-                <div class="process-item1">
+                <div class="process-item1" data-aos="fade-up">
                     <h3 class="process_number">06.</h3>
                     <div class="process_line"></div>
                     <div class="process_contentbar">
