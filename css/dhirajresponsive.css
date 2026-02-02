@@ -130,6 +130,10 @@
         text-transform: capitalize;
     }
 
+    .left_text_black{
+        margin-top: 0px;
+    }
+
     .four_box {
         max-width: 327px;
         gap: 8px;
