@@ -159,7 +159,8 @@ html {
   text-transform: uppercase;
   color: var(--Base-White, #FFF);
   text-align: center;
-
+  border: 0px;
+  width: 300px;
   /* P/btn M */
   font-family: Montserrat;
   font-size: 12px;
@@ -1670,7 +1671,7 @@ footer{
   .card-row {
     display: flex;
     gap: 60px;
-    margin-bottom: 66px;
+    margin-bottom: 35px;
   }
   .how_ite-works .container::after {
     content: "";

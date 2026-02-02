@@ -278,7 +278,7 @@
                         </p>
                         <button class="btn btn-gold  btn-31" type="submit"  data-aos="fade-up">
                             <span class="text-container">
-                                <span class="text">our story</span>
+                                <span class="text">start today</span>
                             </span>
                         </button>
                      </div>
