@@ -162,6 +162,7 @@
 /* Animate background on hover */
 .browwn_how:hover:before {
   --progress: 0%;
+  
 }
 
 /* Text wrapper */
