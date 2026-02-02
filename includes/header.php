@@ -41,19 +41,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav m-auto">
                 <li class="nav-item">
-                  <a class="nav-link "  href="#">Servics <span>[6]</span></a>
+                  <a class="nav-link "  href="service.php">Servics <span>[6]</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="aboutus.php">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="Contact_us">Contact</a>
                 </li>
               </ul>
               <div class="d-flex right-side-main" role="search">
                 <div class="right-side">
                   <ul class="navbar-nav">
-                    <a class="nav-link" href="#">Privacy policy</a>
+                    <a class="nav-link" href="privacy.php">Privacy policy</a>
                   </ul>
                   <p>
                     End-to-End project management,
