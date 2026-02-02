@@ -2,7 +2,7 @@
 .abov_upper1 {
   position: relative;
   overflow: visible;
-  padding-top: 135px;
+  padding-top: 235px;
   background-color: var(--Base-Off-White, #FAFAFA);
   align-self: stretch;
   margin-bottom: 100px;
@@ -108,9 +108,9 @@
 /* Base button */
 .browwn_how {
   display: flex;
-  max-width: 300px;
+  width: 300px;
   height: 64px;
-  padding: 20px 91px;
+  padding: 20px 45px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -226,12 +226,12 @@
   object-fit: cover;
   border-radius: 2px;
   position: absolute;
-  top: 155px;
+  top: 255px;
 }
 
 .top_img {
   position: absolute;
-  top: 155px;
+  top: 255px;
   right: 0px;
 }
 
@@ -286,6 +286,7 @@
 .bilding {
   position: absolute;
   top: -166px;
+  left: -65px;
 }
 
 .abov_upper3 {
@@ -293,6 +294,7 @@
   align-items: center;
   margin: 0 auto;
   padding: 0px;
+  background-color: #fafafa;
 }
 
 .mid_six_box {
@@ -414,7 +416,10 @@
   padding: 0px;
   background-color: #FFF;
 }
-
+.abov_upper5{
+  padding: 0px;
+  background-color: #FAFAFA;
+}
 .our_ddii {
   display: flex;
   padding: 104px 104px 40px 104px;

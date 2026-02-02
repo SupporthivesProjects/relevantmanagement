@@ -1,5 +1,10 @@
 <?php include 'includes/header.php'; ?>
-
+<style>
+    .main-div{
+        background-color: var(--Base-Off-White, #FAFAFA);
+    }
+    
+</style>
 <section class="abov_upper1">
     <video class="left_vid d-lg-block d-md-block d-none " width="100%" height="100%" autoplay muted loop>
         <source src="img/ab_top_leftcorner.mp4" type="">
@@ -163,7 +168,7 @@
     </div>
 </section>
 
-<section class="abov_upper4 d-lg-block d-md-block d-none ">
+<section class="abov_upper5 d-lg-block d-md-block d-none ">
     <div class="container-fluid px-0">
         <div class="last_box" data-aos="fade-up">
             <div class="last_left_text" >

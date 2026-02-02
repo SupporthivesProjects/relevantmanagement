@@ -1,9 +1,10 @@
 @media only screen and (max-device-width: 600px) {
 
-.abov_upper1 {
-    padding: 0px;
-    margin-bottom: 24px;
-}
+    .abov_upper1 {
+        padding: 0px;
+        margin-bottom: 24px;
+    }
+
     .right_vid {
         width: 375px;
         height: 404px;
@@ -67,7 +68,7 @@
         width: 100%;
     }
 
-    .left_vid{
+    .left_vid {
         width: 327px;
         height: 200px;
         object-fit: cover;
@@ -77,84 +78,96 @@
         border-radius: 2px;
     }
 
-    .abov_upper2{
+    .abov_upper2 {
         height: 100%;
         padding-top: 24px;
     }
 
     .mid_sec_bo {
-    display: flex;
-    flex-direction: column;
-    gap: 146px;
-    max-width: 327px;
-    margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 146px;
+        max-width: 327px;
+        margin: 0 auto;
         gap: 56px;
 
-}
+    }
 
-.bilding{
-    position: static;
-    height: 252px;
+    .bilding {
+        position: static;
+        height: 252px;
         width: 327px;
-}
+    }
 
-.inter_sub_black{
-    color: var(--Base-White, #FFF);
-font-family: "Geist";
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: 140%; /* 44.8px */
-letter-spacing: -1px;
-text-transform: capitalize;
-}
+    .inter_sub_black {
+        color: var(--Base-White, #FFF);
+        font-family: "Geist";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 44.8px */
+        letter-spacing: -1px;
+        text-transform: capitalize;
+    }
 
-.tb_inner {
-max-width: 327px;
-padding: 32px 0px 21px 0px;
-gap: 24px;
-margin: 0px auto;
-}
+    .tb_inner {
+        max-width: 327px;
+        padding: 32px 0px 21px 0px;
+        gap: 24px;
+        margin: 0px auto;
+    }
 
-.tb_tittle{
-    color: var(--Base-Off-Black, #0F0F0F);
-font-family: "Geist";
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: 140%; /* 44.8px */
-letter-spacing: -1px;
-text-transform: capitalize;
-}
+    .tb_tittle {
+        color: var(--Base-Off-Black, #0F0F0F);
+        font-family: "Geist";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 44.8px */
+        letter-spacing: -1px;
+        text-transform: capitalize;
+    }
 
-.four_box{
-    max-width: 327px;
-    gap: 8px;
-}
+    .four_box {
+        max-width: 327px;
+        gap: 8px;
+    }
 
-.four_bxs{
-    gap: 24px;
-}
+    .four_bxs {
+        gap: 24px;
+    }
 
-.mid_six_box{
-    height: 100%;
-    margin-bottom: 32px;
-    flex-direction: column-reverse;
-}
+    .mid_six_box {
+        height: 100%;
+        margin-bottom: 32px;
+        flex-direction: column-reverse;
+    }
 
-.right_vid2 {
-    object-fit: cover;
-    width: 375px;
-    height: 300px;
-}
-.third_box3{
-    position: relative;
-}
-.pattenn{
-    position: absolute;
-    bottom: 10px;
-}
+    .right_vid2 {
+        object-fit: cover;
+        width: 375px;
+        height: 300px;
+    }
 
+    .third_box3 {
+        position: relative;
+    }
+
+    .pattenn {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .browwn_how {
+        font-size: 12px;
+    }
+
+    .browwn_how:before {
+        font-size: 12px;
+
+    }
 
 
 
@@ -175,6 +188,12 @@ text-transform: capitalize;
 }
 
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1348px) {
+
+    .right_vid {
+        width: 550px;
+        height: 458px;
+    }
+
     .left_vid {
         width: 130px;
         height: 190px;
