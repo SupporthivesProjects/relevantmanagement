@@ -18,7 +18,7 @@
                               <a href="service.php" class="footer-menu">services</a>
                             </li>
                             <li>
-                              <a href="privacy.html" class="footer-menu">Privacy policy</a>
+                              <a href="privacy.php" class="footer-menu">Privacy policy</a>
                             </li>
                         </ul>
                       </div>
