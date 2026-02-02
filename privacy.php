@@ -1,15 +1,16 @@
 <?php include "includes/header.php"; ?>
 
+  
 <!-- ================= PRIVACY POLICY ================= -->
 
-<div class="policy-wrapper aos-init" data-aos="fade-up">
+<div class="policy-wrapper aos-init" style="margin-top:100px;">
 
-  <div class="header-text" data-aos="fade-up" style="margin-top:0px;">
+  <div class="header-text" data-aos="fade-up">
   <h1>Privacy Policy</h1>
-  <p>Last Updated on 12 February 2026.</p>
+  <p class="update-text" data-aos="fade-up">Last Updated on 12 February 2026.</p>
 </div>
 
-  <div class="upper-text" data-aos="fade-up">
+  <div class="upper-text"data-aos="fade-up" >
   <p style="margin-bottom: 20px;">
     This Privacy Policy outlines how Relevant Management FZCO, with registered address in -address here- collects, uses, protects,
      and shares your personal information when you interact with our services, websites, or platforms.
