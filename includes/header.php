@@ -47,7 +47,7 @@
                   <a class="nav-link" href="aboutus.php">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Contact_us">Contact</a>
+                  <a class="nav-link" href="Contact_us.php">Contact</a>
                 </li>
               </ul>
               <div class="d-flex right-side-main" role="search">
