@@ -7,15 +7,31 @@
 
 /* Remove default Bootstrap caret */
 .service-btn::after {
-    border: none;
+    /* border: none;
   float: right;
-  margin-top: 10px;
+  margin-top: 10px; */
+  display: none;
 }
 
-/* Focus state */
-.service-btn:focus {
-  box-shadow: none;
+/* arrow image styling */
+.service-arrow {
+  float: right;
+  width: 10px;
+  margin-top: 10px; /* tumhare caret jaisa */
+  transition: transform 0.25s ease;
 }
+
+/* rotate arrow when dropdown opens */
+/* .dropdown.show .service-arrow {
+  transform: rotate(180deg);
+} */
+
+/* Focus state */
+.service-btn:focus .service-arrow{
+  box-shadow: none;
+  transform: rotate(180deg);
+}
+
 
 /* Dropdown menu */
 .service-menu {
