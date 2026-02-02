@@ -1,6 +1,7 @@
 
-.policy-wrapper 
-{      
+
+.policy-wrapper {
+      
   margin: auto;
   display: flex;
   max-width: 1200px;
@@ -10,7 +11,7 @@
   align-self: stretch;
 }
 
-.policy-wrapper .header-text .h1 {
+.policy-wrapper .header-text ,h1 {
   color: var(--Base-Off-Black, #0F0F0F);
   margin: 0px;
   font-family: Geist;
@@ -22,16 +23,17 @@
   text-transform: capitalize;
 }
 
-.policy-wrapper .header-text .p {
+.policy-wrapper .header-text .update-text {
   color: var(--Brand-gold, #9E8361);
   font-family: Geist;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32.4px; /* 180% */
+  line-height: 32.4px;
 }
 
-.policy-wrapper .p, ul, li {
+
+.policy-wrapper .upper-text {
   color: var(--Base-01, #383838);
   margin-bottom: 0px;
   font-family: Geist;
