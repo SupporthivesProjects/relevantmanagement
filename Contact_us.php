@@ -1,5 +1,9 @@
 <?php include 'includes/header.php'; ?>
-
+<style>
+.footer-div,footer{
+  background: var(--Base-Off-White, #FAFAFA) !important;
+}
+</style>
 <main class="contact-page container-fluid">
   <img src="img/Pattern-left.png" alt="" class="d-none d-md-block" style="width:80px;height;100%;">
   <div class="contact-cont container" data-aos="fade-up">
@@ -19,14 +23,27 @@
             <div class="n-a">
                 <input type="text" placeholder="Phone number" class="inp-box">
                 <input type="text" placeholder="Company name" class="inp-box">
-                <div class="dropdown services-box form-select">
-                  <button
+                <div class="dropdown services-box">
+                  <!-- <button
                     class="btn dropdown-toggle service-btn w-100"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false">
                     Service of interest
-                  </button>
+                  </button> -->
+                  <button
+  class="btn dropdown-toggle service-btn w-100"
+  type="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false">
+
+  <span class="btn-text">Service of interest</span>
+
+  <img
+    src="img/arrow.png"
+    class="service-arrow"
+  />
+</button>
 
                   <ul class="dropdown-menu w-100 service-menu">
                     <li><a class="dropdown-item" href="#">End-to-end project management</a></li>
@@ -50,8 +67,8 @@
                   </div>
                   <div class="re-btn">
                     <img src="img/reCAPTCHA.png" alt="" class="recapcha">
-                    <button class="cont-btn btn" data-bs-toggle="modal" data-bs-target="#contsuccess">
-                      <a href="#">Confirm</a>
+                    <button class="cont-btn btn btn-gold btn-31 aos-init aos-animate" data-bs-toggle="modal" data-bs-target="#contsuccess">
+                      <a href="#" class="text">Confirm</a>
                     </button>
                   </div>
                 </div>
@@ -92,9 +109,9 @@
         <img src="img/modal-tick.png" alt="">
         <div class="body-cont">
         <p class="btxt">successfully submitted!</p>
-        <p style="text-align:center">Your message is now with our team. We appreciate you contacting Relevant Management FZCO and will respond as soon as possible.</p>
+        <p style="text-align:center;color:#666666">Your message is now with our team. We appreciate you contacting Relevant Management FZCO and will respond as soon as possible.</p>
         </div>
-         <button class="cont-btn btn" data-bs-dismiss="modal" style="width:250px;">
+         <button class="cont-btn btn" data-bs-dismiss="modal" style="width:250px;height:48px;">
             <a href="#">Close</a>
           </button>
     </div>
@@ -103,7 +120,7 @@
 
 
 
-<script>
+<!-- <script>
   document.querySelectorAll('.service-menu .dropdown-item')
     .forEach(item => {
       item.addEventListener('click', function (e) {
@@ -113,6 +130,17 @@
         const button = dropdown.querySelector('.service-btn');
 
         button.textContent = this.textContent;
+      });
+    });
+</script> -->
+<script>
+  document.querySelectorAll('.service-menu .dropdown-item')
+    .forEach(item => {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const dropdown = this.closest('.dropdown');
+        dropdown.querySelector('.btn-text').textContent = this.textContent;
       });
     });
 </script>
