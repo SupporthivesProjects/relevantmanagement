@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-12 col-sm-12 col-12 p-mo">
                   <div class="left-side-footer">
-                      <h2>Contact us. <img src="./img/down-arrow.svg" alt="img" class="img-fluid"></h2>
+                      <h2 class="hover-contact">Contact us. <img src="./img/down-arrow.svg" alt="img" class="img-fluid "></h2>
                       <div class="footer-menu">
                         <ul>
                             <li>
@@ -80,6 +80,19 @@
               margin: 20,
               autoplay: true,
           });
+      });
+    </script>
+    <script>
+      document.querySelectorAll('.hover-contact').forEach(wrapper => {
+        const img = wrapper.querySelector('img');
+
+        wrapper.addEventListener('mouseenter', () => {
+         // img.src = './img/up-arrow.svg';
+        });
+
+        wrapper.addEventListener('mouseleave', () => {
+          //img.src = './img/down-arrow.svg';
+        });
       });
     </script>
     <script>

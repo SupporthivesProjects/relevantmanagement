@@ -1,5 +1,6 @@
 
 <?php include 'includes/header.php'; ?>
+
 <section class="home-banner">
     <img src="./img/herobgimgmask.png" alt="" class="img-fluid d-lg-block d-md-block d-none">
     <img src="./img/img-wrapper-mo.png" alt="" class="img-fluid d-lg-none d-md-none d-block">
@@ -28,6 +29,7 @@
 </section>
 <section class="how_ite-works">
     <img src="./img/how-it-works.png" alt="" class="img-fluid bg-image d-lg-block d-md-block d-none">
+    <img src="./img/how-it-works-bg-mo.png" alt="" class="img-fluid bg-image d-lg-none d-md-none d-block">
     <div class="container p-mo">
         <div class="col">
             <div class="row">
@@ -94,7 +96,7 @@
 </section>
 <section class="our-solution">
     <img src="./img/bernd-dittrich-bg.png" alt="" class="img-fluid bg-image d-lg-block d-md-block d-none">
-     <img src="./img/bernd-dittrich-bg-mo.png" alt="" class="img-fluid w-100 d-lg-none d-md-none d-block">
+     <img src="./img/bernd-dittrich-bg-mo.png" alt="" class="img-fluid w-100 d-none">
         <div class="our-solution-bg">
             <div class="container">
                 <h6>What we deliver</h6>
@@ -253,11 +255,11 @@
         </div>
 </section>
 <section class="build-for-delivery">
-    <div class="container">
+    <div class="container ps-0 p-mo">
         <div class="bg-div">
             <div class="col">
             <div class="row">
-                 <div class="col-lg-6 col-md-12 col-sm-12 col-12 p-mo order-lg-0 order-1">
+                 <div class="col-lg-6 col-md-12 col-sm-12 col-12 p-mo order-lg-0 order-1 p-0">
                      <div class="build-delivery-content"  data-aos="fade-up">
                         <div>
                             <h6>Precision-led project execution.</h6>
@@ -293,12 +295,12 @@
     <div class="container-fluid p-0">
         <div class="col">
             <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12 col-12"  data-aos="fade-up">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 p-0"  data-aos="fade-up">
                     <img src="./img/color-img.png" alt="img" class="img-fluid d-lg-block d-md-block d-none w-100 h-100 color-img">
                     <img src="./img/color-img-mo.png" alt="img" class="img-fluid d-block d-lg-none d-md-none w-100 h-100 color-img">
                 </div>
-                <div class="col-lg-8 col-md-12 col-sm-12 col-12"  data-aos="fade-up">
-                    <div class="build-for-confidance-content">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 p-0">
+                    <div class="build-for-confidance-content" data-aos="fade-up">
                          <h6>Structure that delivers.</h6>
                          <h2>Built for Confidence</h2>
                          <p>

@@ -200,17 +200,17 @@ html {
   overflow: hidden;
   position: relative;
 }
+.right-side-main .btn-31 .text {
+  font-size: 12px;
+}
 .btn-31 .text {
   display: block;
   font-weight: 900;
-  /* mix-blend-mode: difference; */
   position: relative;
   color: var(--Base-White, #FFF);
   text-align: center;
-
-  /* P/btn M */
   font-family: Montserrat;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px; /* 200% */
@@ -255,6 +255,7 @@ html {
     transform: translateY(0);
   }
 }
+
 /* ---------------------------------------header-------------------------------- */
 header{
     border-bottom: 1px solid var(--Base-04, #E9E9E9);
@@ -290,6 +291,13 @@ header{
 .nav-item span{
   display: none;
 }
+.right-side-main .btn{
+   height:48px;
+}
+.navbar-nav .active{
+      color: var(--Base-01, #383838);
+      opacity: 0.5;
+  }
 /* ------------------------------section---------------------------------- */
 .home-banner{
   padding: 0px 0px;
@@ -699,17 +707,17 @@ header{
     flex-direction: column;
     gap: 40px;
 }
-.tick-h5{
+.tick-h5 {
     display: flex;
     gap: 8px;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 8px;
 }
-.tick-h5 img{
-  width: 19.833px;
-  height: 17px;
-  max-width: 100%;
+.tick-h5 img {
+    width: 34px;
+    height: 34px;
+    max-width: 100%;
 }
 .build-for-confidance{
   width: 1920px;
@@ -717,9 +725,15 @@ header{
   padding: 0px 0px;
 }
 
+.build-for-confidance{
+  background: var(--Base-Off-White, #FAFAFA);
 
+}
 
 /* --------------------------------footer-------------------------- */
+footer{
+  background: var(--Base-White, #FFF);
+}
 .left-side-footer h2{
     color: var(--Base-Off-Black, #0F0F0F);
     font-family: 'Geist';
@@ -729,6 +743,21 @@ header{
     line-height: 140%;
     letter-spacing: -1px;
     text-transform: capitalize;
+    transition: all .9s linear;
+
+}
+
+.hover-contact img{
+  transition: filter 0.9s ease, transform 0.9s ease;
+
+}
+.left-side-footer h2:hover{
+  color: var(--Brand-gold, #9E8361);
+  padding-left:16px;
+}
+.hover-contact:hover img{
+  filter: invert(0) brightness(0);
+  transform: rotate(-90deg);
 }
 .left-side-footer h2 img{
     width: 58.125px;
@@ -794,9 +823,12 @@ header{
 }
 .footer-div{
     padding: 72px 24px 72px 24px;
-    background: var(--Base-Off-White, #FAFAFA);
-}
+   background: var(--Base-White, #FFF);
 
+}
+.build-for-confidance .btn{
+    width: 300px;
+}
 
 /* ---------------------------------media------------------------------------------- */
 @media (min-width: 700px) and (max-width: 790px) {
