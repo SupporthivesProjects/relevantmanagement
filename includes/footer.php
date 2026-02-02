@@ -6,7 +6,7 @@
                 <div class="col-lg-6 col-sm-12 col-sm-12 col-12 p-mo">
                   <div class="left-side-footer">
                       <h2 class="hover-contact">Contact us. 
-                        <a href="Contactus.php">
+                        <a href="Contact_us.php">
                           <img src="./img/down-arrow.svg" alt="img" class="img-fluid ">
                         </a>
                       </h2>
