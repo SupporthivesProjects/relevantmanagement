@@ -2,6 +2,7 @@
 <?php include 'includes/header.php'; ?>
 
 <!-- ================= PRIVACY POLICY ================= -->
+
 <div class="policy-wrapper" style="margin-top:100px;">
 
   <div>
@@ -31,7 +32,7 @@
   <p>We do not collect sensitive personal data (e.g. biometric, health, religious or political beliefs).</p>
 </div>
 
-<div class="secound-policy">
+<div class="secound-policy" data-aos="fade-up">
   <h5>2. How We Use Your Data</h5>
   <p>We use personal data to:</p>
   <ul style="margin-bottom: 10px;">
@@ -44,7 +45,7 @@
   <p>We will never sell or rent your personal data to third parties.</p>
 </div>
 
-<div class="third-policy">
+<div class="third-policy" data-aos="fade-up">
   <h5>3. Legal Basis for Processing</h5>
   <p>We process personal data under one or more of the following legal bases:</p>
   <ul>
@@ -123,3 +124,6 @@
 </div>
 
 <?php include 'includes/footer.php'; ?>
+
+
+
