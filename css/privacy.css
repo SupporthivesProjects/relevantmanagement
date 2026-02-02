@@ -1,7 +1,4 @@
-body {
-      background-color: #ffffff;
-      font-family: Arial, sans-serif;
-    }
+
 
     .policy-wrapper {
       
@@ -14,9 +11,8 @@ body {
       align-self: stretch;
     }
 
-    h1 {
+    .policy-wrapper .header-text .h1 {
       color: var(--Base-Off-Black, #0F0F0F);
-
       margin: 0px;
       font-family: Geist;
       font-size: 40px;
@@ -27,10 +23,8 @@ body {
       text-transform: capitalize;
     }
 
-    .updated-text {
+    .policy-wrapper .header-text .p {
       color: var(--Brand-gold, #9E8361);
-
-      
       font-family: Geist;
       font-size: 18px;
       font-style: normal;
@@ -38,7 +32,7 @@ body {
       line-height: 32.4px; /* 180% */
     }
     
-    p, ul, li {
+    .policy-wrapper .p, ul, li {
       color: var(--Base-01, #383838);
       margin-bottom: 0px;
       font-family: Geist;
@@ -48,7 +42,7 @@ body {
       line-height: 150%; /* 24px */
     }
 
-    .upper-text{
+    .policy-wrapper .upper-text{
       color: var(--Base-01, #383838);
       font-family: Geist;
       font-size: 16px;
@@ -58,7 +52,7 @@ body {
     }
 
 
-    h5 {
+    .policy-wrapper .h5 {
       color: var(--Base-01, #383838);
       font-family: Geist;
       font-size: 16px;
@@ -72,7 +66,7 @@ body {
       .policy-wrapper {
         padding: 30px 15px;
       }
-      h1 {
+      .policy-wrapper .h1 {
         font-size: 1.7rem;
       }
     }
