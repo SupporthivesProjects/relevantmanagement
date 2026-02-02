@@ -133,6 +133,7 @@
     .four_box {
         max-width: 327px;
         gap: 8px;
+        height: 100%;
     }
 
     .four_bxs {
