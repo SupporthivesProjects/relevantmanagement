@@ -67,7 +67,9 @@
                 <video autoplay muted loop playsinline class="service_s1video" style="width: 100%">
                     <source style="width: 100%" src="img/service_s3.mp4" type="video/mp4">
                 </video>
-                <button type="button" class="btn service_s1btn w-100">Request consultation</button>
+                <div class="mobile_none">
+                    <button type="button" class="btn service_s1btn w-100 mobile_none">Request consultation</button>
+                </div>
             </div>
 
             <!-- RIGHT CONTENT -->
@@ -184,10 +186,61 @@
                     </div>
                 </div>
             </div>
+            <div class="desktop_none service_btndiv">
+                <button type="button" class="btn service_s1btn w-100">Request consultation</button>
+            </div>
 
         </div>
     </section>
 
 </main>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const section = document.querySelector(".process-section");
+  const button = document.querySelector(".service_btndiv");
+
+  if (!section || !button) return;
+
+  let releasing = false;
+
+  function handleScroll() {
+    const sectionRect = section.getBoundingClientRect();
+    const buttonHeight = button.offsetHeight;
+    const viewportHeight = window.innerHeight;
+
+    // Inside section → fixed
+    if (sectionRect.top <= 0 && sectionRect.bottom > viewportHeight - buttonHeight) {
+      button.classList.add("is-fixed");
+      button.classList.remove("is-static", "is-releasing");
+      releasing = false;
+    }
+
+    // Section bottom reached → smooth release
+    else if (sectionRect.bottom <= viewportHeight - buttonHeight && !releasing) {
+      releasing = true;
+
+      button.classList.add("is-releasing");
+
+      setTimeout(() => {
+        button.classList.remove("is-fixed", "is-releasing");
+        button.classList.add("is-static");
+        releasing = false;
+      }, 300); // must match CSS transition
+    }
+
+    // Before section
+    else if (sectionRect.top > 0) {
+      button.classList.remove("is-fixed", "is-static", "is-releasing");
+      releasing = false;
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+  window.addEventListener("resize", handleScroll);
+});
+</script>
+
+
+
 
 <?php include 'includes/footer.php'; ?>
