@@ -441,6 +441,7 @@ margin: 0px;
     .service_btndiv {
     padding: 24px;
     opacity: 0;
+    width: 100%;
     transform: translateY(40px); /* small offset only */
     transition: transform 0.8s ease, opacity 0.35s ease;
     will-change: transform;

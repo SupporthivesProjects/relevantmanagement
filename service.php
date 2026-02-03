@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!section || !button) return;
 
   const HEADER_OFFSET = 310;        // header bottom trigger
-  const BUTTON_HEIGHT = 72;        // button height
+  const BUTTON_HEIGHT = 60;        // button height
   const BOTTOM_RELEASE_OFFSET = 60;
 
   let sectionTopY = 0;
