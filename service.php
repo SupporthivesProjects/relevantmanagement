@@ -1,6 +1,10 @@
 
 <?php include 'includes/header.php'; ?>
-
+<style>
+    .footer-div{
+        background: #FAFAFA;
+    }
+</style>
 <main>
     <!-- Section 1 -->
     <section class="service_s1">
@@ -219,59 +223,66 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!section || !button) return;
 
-  let releasing = false;
+  const HEADER_OFFSET = 310;        // header bottom trigger
+  const BUTTON_HEIGHT = 60;        // button height
+  const BOTTOM_RELEASE_OFFSET = 60;
+
+  let sectionTopY = 0;
+  let sectionBottomReleaseY = 0;
+
+  function calculatePositions() {
+    const sectionRect = section.getBoundingClientRect();
+    const scrollY = window.scrollY;
+
+    sectionTopY = sectionRect.top + scrollY - HEADER_OFFSET;
+
+    sectionBottomReleaseY =
+      sectionRect.bottom +
+      scrollY -
+      window.innerHeight +
+      BOTTOM_RELEASE_OFFSET -
+      BUTTON_HEIGHT;
+  }
 
   function handleScroll() {
-
-    /* 🚫 Disable on desktop */
     if (window.innerWidth > 700) {
       button.classList.remove("is-fixed", "is-static", "is-releasing");
-      releasing = false;
       return;
     }
 
-    const sectionRect = section.getBoundingClientRect();
-    const buttonHeight = button.offsetHeight;
-    const viewportHeight = window.innerHeight;
+    const scrollY = window.scrollY;
 
-    /* Inside section → fixed */
-    if (
-      sectionRect.top <= 0 &&
-      sectionRect.bottom > viewportHeight - buttonHeight
-    ) {
+    /* Before section reaches header bottom */
+    if (scrollY < sectionTopY) {
+      button.classList.remove("is-fixed", "is-static", "is-releasing");
+      return;
+    }
+
+    /* Sticky zone */
+    if (scrollY >= sectionTopY && scrollY < sectionBottomReleaseY) {
       button.classList.add("is-fixed");
       button.classList.remove("is-static", "is-releasing");
-      releasing = false;
+      return;
     }
 
-    /* Section bottom reached → smooth release */
-    else if (
-      sectionRect.bottom <= viewportHeight - buttonHeight &&
-      !releasing
-    ) {
-      releasing = true;
-
-      button.classList.add("is-releasing");
-
-      setTimeout(() => {
-        button.classList.remove("is-fixed", "is-releasing");
-        button.classList.add("is-static");
-        releasing = false;
-      }, 300); // keep in sync with CSS
-    }
-
-    /* Before section */
-    else if (sectionRect.top > 0) {
-      button.classList.remove("is-fixed", "is-static", "is-releasing");
-      releasing = false;
+    /* Smooth release to original position */
+    if (scrollY >= sectionBottomReleaseY) {
+      button.classList.remove("is-fixed");
+      button.classList.add("is-static");
     }
   }
 
+  calculatePositions();
+  handleScroll();
+
   window.addEventListener("scroll", handleScroll);
-  window.addEventListener("resize", handleScroll);
-  handleScroll(); // initial check
+  window.addEventListener("resize", () => {
+    calculatePositions();
+    handleScroll();
+  });
 });
 </script>
+
 
 
 
