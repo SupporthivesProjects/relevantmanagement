@@ -15,7 +15,7 @@
 }
 </style>
 <main>
-    <!-- Section 1 -->
+    <!-- Section 1 Start -->
     <section class="service_s1">
         <video autoplay muted loop playsinline class="service_s1video" style="width: 100%">
             <source style="width: 100%" src="img/service_s1.mp4" type="video/mp4">
