@@ -62,7 +62,7 @@ include 'includes/header.php';
             <label for="terms" class="term-txt" id="terms-text">I have read and agree to the <a href="privacy.php" style="color:#9E8361;text-decoration:none;">Privacy Policy</a> .</label>
           </div>
           <div class="re-btn">
-            <div class="h-captcha recapcha" data-sitekey="6d544706-a634-41da-a362-eb48f08a7876"></div>
+            <div class="h-captcha recapcha" data-sitekey="6d544706-a634-41da-a362-eb48f08a7876" style="height:74px; transform: scale(0.7);"></div>
             <button class="cont-btn btn btn-gold btn-31 aos-init aos-animate" type="submit" name="submit_contact">
               <a href="#" class="text">Confirm</a>
             </button>

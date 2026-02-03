@@ -250,8 +250,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
 
     $admin_sent = false;
     $user_sent = false;
-    $admin_error = '';
-    $user_error = '';
+    $error_message = '';
 
     try {
         $adminMail = createMailer();
@@ -291,17 +290,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
         exit;
     } elseif ($admin_sent && !$user_sent) {
         $_SESSION['form_warning'] = 'partial_user';
-        $_SESSION['email_error'] = $user_error;
         header('Location: ' . $_SERVER['PHP_SELF']);
         exit;
     } elseif (!$admin_sent && $user_sent) {
         $_SESSION['form_warning'] = 'partial_admin';
-        $_SESSION['email_error'] = $admin_error;
         header('Location: ' . $_SERVER['PHP_SELF']);
         exit;
     } else {
+        if (!empty($error_message)) {
+            error_log("Contact form email errors: " . $error_message);
+        }
         $_SESSION['form_error'] = 'Sorry, there was an error sending your message. Please try again later or contact us directly.';
-        $_SESSION['email_error'] = !empty($admin_error) ? $admin_error : $user_error;
         header('Location: ' . $_SERVER['PHP_SELF']);
         exit;
     }
