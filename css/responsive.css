@@ -13,6 +13,8 @@
     header{
         height: auto;
         position: relative;
+        border-bottom: 0px solid var(--Base-04, #E9E9E9);
+        background: transparent;
     }
     .navbar {
         height: auto;
