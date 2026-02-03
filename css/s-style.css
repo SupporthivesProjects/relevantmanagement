@@ -359,6 +359,9 @@ align-self: stretch;
 .cont-btn{
     height: 48px;
 }
+.services-box{
+    width: 100%;
+}
 }
 
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1348px) {
