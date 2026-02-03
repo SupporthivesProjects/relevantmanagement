@@ -1,6 +1,10 @@
 
 <?php include 'includes/header.php'; ?>
-
+<style>
+    .footer-div{
+        background: #FAFAFA;
+    }
+</style>
 <main>
     <!-- Section 1 -->
     <section class="service_s1">
@@ -219,9 +223,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!section || !button) return;
 
-  const HEADER_OFFSET = 72;        // header bottom trigger
+  const HEADER_OFFSET = 310;        // header bottom trigger
   const BUTTON_HEIGHT = 72;        // button height
-  const BOTTOM_RELEASE_OFFSET = 90;
+  const BOTTOM_RELEASE_OFFSET = 60;
 
   let sectionTopY = 0;
   let sectionBottomReleaseY = 0;
