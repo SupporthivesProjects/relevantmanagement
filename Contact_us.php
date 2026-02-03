@@ -63,7 +63,7 @@
                 <div class="recapcha-line">
                   <div class="term-bx">
                   <input type="checkbox" name="" id="" class="term-chk">
-                  <label for="" class="term-txt">I have read and agree to the <a href="#" style="color:#9E8361;text-decoration:none;">Privacy Policy</a> .</label>
+                  <label for="" class="term-txt">I have read and agree to the <a href="Contact_us.php" style="color:#9E8361;text-decoration:none;">Privacy Policy</a> .</label>
                   </div>
                   <div class="re-btn">
                     <img src="img/reCAPTCHA.png" alt="" class="recapcha">
