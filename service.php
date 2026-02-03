@@ -6,6 +6,7 @@
     }
     .right-side-main .btn{
         width: 100%;
+        min-width: 160px;
     }
 
 @media (max-width: 700px) {
