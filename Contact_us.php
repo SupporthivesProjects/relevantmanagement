@@ -20,7 +20,7 @@
       <input type="hidden" name="service_of_interest" id="service_of_interest">
       <div class="n-a">
         <input type="text" placeholder="Full name" name="full_name" class="inp-box" required>
-        <input type="eamil" placeholder="Email address" name="email" class="inp-box" required>
+        <input type="email" placeholder="Email address" name="email" class="inp-box" required>
       </div>
       <div class="n-a">
         <input type="tel" placeholder="Phone number" name="phone" class="inp-box" required>
@@ -180,7 +180,7 @@
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 
 <script>
   document.getElementById('contactForm').addEventListener('submit', function(e) {

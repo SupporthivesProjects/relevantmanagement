@@ -1,5 +1,5 @@
 <?php
-
+require_once 'config.php';
 require_once 'PHPMailer/src/Exception.php';
 require_once 'PHPMailer/src/PHPMailer.php';
 require_once 'PHPMailer/src/SMTP.php';
@@ -11,14 +11,7 @@ use PHPMailer\PHPMailer\Exception;
 
 
 // SMTP Configuration
-/*define('MAIL_DRIVER', 'smtp');
-define('MAIL_HOST', '212.28.183.181');
-define('MAIL_PORT', 587);
-define('MAIL_USERNAME', 'info@theprojectcompanyllc.com');
-define('MAIL_PASSWORD', 'test@123@#');
-define('MAIL_ENCRYPTION', 'null');
-define('MAIL_FROM_ADDRESS', 'info@theprojectcompanyllc.com');
-define('MAIL_FROM_NAME', 'relevantmanagement.');*/
+
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
@@ -84,9 +77,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
     }
     
     // Verify hCaptcha using cURL
-    // $hcaptcha_secret = 'ES_0114ceb415b247a0a208c71ffbfe2dd8';
-    // $hcaptcha_response = $_POST['h-captcha-response'];
-    // $hcaptcha_remoteip = $_SERVER['REMOTE_ADDR'];
+     
+     $hcaptcha_response = $_POST['h-captcha-response'];
+     $hcaptcha_remoteip = $_SERVER['REMOTE_ADDR'];
     
     $hcaptcha_url = 'https://hcaptcha.com/siteverify';
     $hcaptcha_data = array(
@@ -167,7 +160,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
     }
     
     // Admin email configuration
-    $admin_email = 'support@theprojectcompanyllc.com';
+    
     $admin_subject = 'New Contact Form Submission - ' . $full_name;
     
     // Admin email body
@@ -364,22 +357,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
     // Check if both emails were sent successfully
     if ($admin_sent && $user_sent) {
         echo "<script>
-        // Detect mobile using JavaScript
         var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    
         if (isMobile) {
             window.location.href = 'success.php';
         } else {
-            Swal.fire({
-                icon: 'success',
-                title: 'Success!',
-                text: 'Thank you for your message. We have sent you a confirmation email and will get back to you soon!',
-                confirmButtonColor: '#28A745'
-            }).then(function() {
-                document.getElementById('contactForm').reset();
+            document.addEventListener('DOMContentLoaded', function () {
+                var successModal = new bootstrap.Modal(document.getElementById('contsuccess'));
+                successModal.show();
+    
+                document.getElementById('contsuccess').addEventListener('hidden.bs.modal', function () {
+                    document.getElementById('contactForm').reset();
+                });
             });
         }
-    </script>";
-    } elseif ($admin_sent && !$user_sent) {
+        </script>";
+    }
+    
+     elseif ($admin_sent && !$user_sent) {
         echo "<script>
             Swal.fire({
                 icon: 'warning',
