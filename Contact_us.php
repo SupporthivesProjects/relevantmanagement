@@ -102,7 +102,7 @@
      </div>
      <img src="img/Pattern-right.png" alt="" class="d-none d-md-block" style="width:80px;height;100%;">
 </main>
-
+<!-- success modal -->
 <div class="modal fade" id="contsuccess" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content cont-modal">
@@ -111,13 +111,29 @@
         <p class="btxt">successfully submitted!</p>
         <p style="text-align:center;color:#666666">Your message is now with our team. We appreciate you contacting Relevant Management FZCO and will respond as soon as possible.</p>
         </div>
-         <button class="cont-btn btn" data-bs-dismiss="modal" style="width:250px;height:48px;">
+         <button class="cont-btn btn" data-bs-dismiss="modal" style="width:250px;height:48px;" data-bs-toggle="modal" data-bs-target="#conterror">
             <a href="#">Close</a>
           </button>
     </div>
   </div>
 </div>
 
+<!-- error modal -->
+<div class="modal fade" id="conterror" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content cont-modal">
+        <img src="img/modal-cross.png" alt="">
+        <div class="body-cont">
+        <p class="btxt">an error occurred</p>
+        <p style="text-align:center;color:#666666">There was an error with the submission.
+Please check your details and try again.</p>
+        </div>
+         <button class="cont-btn btn" data-bs-dismiss="modal" style="width:250px;height:48px;">
+            <a href="#">Try Again</a>
+          </button>
+    </div>
+  </div>
+</div>
 
 
 <!-- <script>
