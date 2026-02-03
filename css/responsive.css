@@ -171,6 +171,9 @@
     .navbar-brand{
         padding: 0px;
     }
+    .header-is-active{
+        background: var(--Base-White, #FFF);
+    }
 
 }
 /* ---------------------------home------------------------------------ */
