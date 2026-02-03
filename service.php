@@ -4,6 +4,15 @@
     .footer-div{
         background: #FAFAFA;
     }
+    .right-side-main .btn{
+        width: 100%;
+    }
+
+@media (max-width: 700px) {
+    .right-side-main{
+        width: 100%;
+    }
+}
 </style>
 <main>
     <!-- Section 1 -->
