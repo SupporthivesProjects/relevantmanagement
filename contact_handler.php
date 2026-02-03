@@ -131,7 +131,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
     // Function to create PHPMailer instance with SMTP settings
     function createMailer() {
         $mail = new PHPMailer(true);
-        
+    
         try {
             // Server settings
             $mail->isSMTP();
@@ -139,20 +139,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
             $mail->SMTPAuth   = true;
             $mail->Username   = MAIL_USERNAME;
             $mail->Password   = MAIL_PASSWORD;
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    
+            // Use the config for encryption
+            // If MAIL_ENCRYPTION is empty or null, PHPMailer sends unencrypted
+            $mail->SMTPSecure = MAIL_ENCRYPTION ?: '';
+    
             $mail->Port       = MAIL_PORT;
             $mail->CharSet    = 'UTF-8';
-            $mail->SMTPOptions = array(
-                'ssl' => array(
+    
+            $mail->SMTPOptions = [
+                'ssl' => [
                     'verify_peer'       => false,
                     'verify_peer_name'  => false,
-                    'allow_self_signed' => true
-                )
-            );
-            
-            // Enable verbose debug output (disable in production)
+                    'allow_self_signed' => true,
+                ]
+            ];
+    
+            // Enable verbose debug output for troubleshooting (optional)
             // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-            
+    
             return $mail;
         } catch (Exception $e) {
             throw new Exception("Mailer setup failed: {$mail->ErrorInfo}");
@@ -357,24 +362,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
     // Check if both emails were sent successfully
     if ($admin_sent && $user_sent) {
         echo "<script>
+        // Detect mobile using JavaScript
         var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    
         if (isMobile) {
             window.location.href = 'success.php';
         } else {
-            document.addEventListener('DOMContentLoaded', function () {
-                var successModal = new bootstrap.Modal(document.getElementById('contsuccess'));
-                successModal.show();
-    
-                document.getElementById('contsuccess').addEventListener('hidden.bs.modal', function () {
-                    document.getElementById('contactForm').reset();
-                });
+            Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: 'Thank you for your message. We have sent you a confirmation email and will get back to you soon!',
+                confirmButtonColor: '#28A745'
+            }).then(function() {
+                document.getElementById('contactForm').reset();
             });
         }
-        </script>";
-    }
+    </script>";
     
-     elseif ($admin_sent && !$user_sent) {
+    }elseif ($admin_sent && !$user_sent) {
         echo "<script>
             Swal.fire({
                 icon: 'warning',
