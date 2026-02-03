@@ -622,7 +622,7 @@ header{
     font-weight: 500;
     line-height: 180%;
     margin-bottom: 0px;
-    width: 458px;
+    width: 421px;
     max-width: 100%;
 }
 .img-wrapper{
@@ -699,6 +699,7 @@ header{
   width: 1280px;
   padding: 104px 332px 104px 150px;
   max-width:100%;
+  background: var(--Base-Off-White, #FAFAFA);
 }
 .row-colums h5{
     color: var(--Base-Off-Black, #0F0F0F);
@@ -735,7 +736,8 @@ header{
 }
 
 .build-for-confidance{
-  background: var(--Base-Off-White, #FAFAFA);
+  background: var(--Base-Off-White, #fff);
+
 
 }
 
@@ -772,6 +774,7 @@ footer{
     width: 58.125px;
     height: 58.125px;
     max-width: 100%;
+    margin-top: -15px;
 }
 .footer-menu ul{
   padding-left: 0px;
