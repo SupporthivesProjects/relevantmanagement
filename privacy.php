@@ -1,4 +1,9 @@
 <?php include "includes/header.php"; ?>
+<style>
+    .footer-div{
+        background: #FAFAFA;
+    }
+</style>
 
   
 <!-- ================= PRIVACY POLICY ================= -->
