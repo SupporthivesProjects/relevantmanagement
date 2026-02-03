@@ -1,4 +1,7 @@
-<?php include 'includes/header.php'; ?>
+<?php 
+include 'contact_handler.php';
+include 'includes/header.php'; 
+?>
 <style>
   .footer-div,
   footer {
@@ -24,15 +27,8 @@
       </div>
       <div class="n-a">
         <input type="tel" placeholder="Phone number" name="phone" class="inp-box" required>
-        <input type="text" placeholder="Company name" name="company" class="inp-box" required>
+        <input type="text" placeholder="Company name" name="company" class="inp-box">
         <div class="dropdown services-box">
-          <!-- <button
-                    class="btn dropdown-toggle service-btn w-100"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Service of interest
-                  </button> -->
           <button
             class="btn dropdown-toggle service-btn w-100"
             type="button"
@@ -48,14 +44,13 @@
 
           <ul class="dropdown-menu w-100 service-menu">
             <li><a class="dropdown-item" href="#" data-value="End-to-end project management">End-to-end project management</a></li>
-            <li><a class="dropdown-item" href="#" data-value="Project planning & scheduling">Project planning & scheduling</a></li>
-            <li><a class="dropdown-item" href="#" data-value="Budget & cost control">Budget & cost control</a></li>
+            <li><a class="dropdown-item" href="#" data-value="Project planning &amp; scheduling">Project planning &amp; scheduling</a></li>
+            <li><a class="dropdown-item" href="#" data-value="Budget &amp; cost control">Budget &amp; cost control</a></li>
             <li><a class="dropdown-item" href="#" data-value="Resources management">Resources management</a></li>
             <li><a class="dropdown-item" href="#" data-value="Stakeholder management">Stakeholder management</a></li>
-            <li><a class="dropdown-item" href="#" data-value="Risk & process control">Risk & process control</a></li>
+            <li><a class="dropdown-item" href="#" data-value="Risk &amp; process control">Risk &amp; process control</a></li>
           </ul>
         </div>
-        <!-- end -->
       </div>
       <div class="n-a">
         <textarea name="message" class="comment-box" placeholder="Comments" required></textarea>
@@ -67,8 +62,7 @@
             <label for="terms" class="term-txt" id="terms-text">I have read and agree to the <a href="privacy.php" style="color:#9E8361;text-decoration:none;">Privacy Policy</a> .</label>
           </div>
           <div class="re-btn">
-            <!-- <img src="img/reCAPTCHA.png" alt="" class="recapcha"> -->
-            <div class="h-captcha recapcha" data-sitekey="6d544706-a634-41da-a362-eb48f08a7876"></div>
+            <div class="h-captcha recapcha" data-sitekey="6d544706-a634-41da-a362-eb48f08a7876" style="height:74px; transform: scale(0.7);"></div>
             <button class="cont-btn btn btn-gold btn-31 aos-init aos-animate" type="submit" name="submit_contact">
               <a href="#" class="text">Confirm</a>
             </button>
@@ -104,7 +98,7 @@
   </div>
   <img src="img/Pattern-right.png" alt="" class="d-none d-md-block" style="width:80px;height:100%;">
 </main>
-<!-- success modal -->
+
 <div class="modal fade" id="contsuccess" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content cont-modal">
@@ -113,22 +107,20 @@
         <p class="btxt">successfully submitted!</p>
         <p style="text-align:center;color:#666666">Your message is now with our team. We appreciate you contacting Relevant Management FZCO and will respond as soon as possible.</p>
       </div>
-      <button class="cont-btn btn" data-bs-dismiss="modal" style="width:250px;height:48px;" data-bs-toggle="modal" data-bs-target="#conterror">
+      <button class="cont-btn btn" data-bs-dismiss="modal" style="width:250px;height:48px;">
         <a href="#">Close</a>
       </button>
     </div>
   </div>
 </div>
 
-<!-- error modal -->
 <div class="modal fade" id="conterror" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content cont-modal">
       <img src="img/modal-cross.png" alt="">
       <div class="body-cont">
         <p class="btxt">an error occurred</p>
-        <p style="text-align:center;color:#666666">There was an error with the submission.
-          Please check your details and try again.</p>
+        <p id="errorMessage" style="text-align:center;color:#666666">There was an error with the submission. Please check your details and try again.</p>
       </div>
       <button class="cont-btn btn" data-bs-dismiss="modal" style="width:250px;height:48px;">
         <a href="#">Try Again</a>
@@ -137,46 +129,30 @@
   </div>
 </div>
 
+<div class="modal fade" id="contwarning" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content cont-modal">
+      <img src="img/modal-tick.png" alt="">
+      <div class="body-cont">
+        <p class="btxt">partially sent</p>
+        <p id="warningMessage" style="text-align:center;color:#666666"></p>
+      </div>
+      <button class="cont-btn btn" data-bs-dismiss="modal" style="width:250px;height:48px;">
+        <a href="#">Close</a>
+      </button>
+    </div>
+  </div>
+</div>
 
-<!-- <script>
-  document.querySelectorAll('.service-menu .dropdown-item')
-    .forEach(item => {
-      item.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        const dropdown = this.closest('.dropdown');
-        const button = dropdown.querySelector('.service-btn');
-
-        button.textContent = this.textContent;
-      });
-    });
-</script> -->
 <script>
   document.querySelectorAll('.service-menu .dropdown-item').forEach(item => {
     item.addEventListener('click', function(e) {
       e.preventDefault();
-
-      const value = this.getAttribute('data-value');
-      //console.log('dropdownvalue',value)
-      // Update button text
+      var value = this.getAttribute('data-value');
       document.getElementById('selectedService').innerText = value;
-
-      // Set hidden input value (sent to PHP)
       document.getElementById('service_of_interest').value = value;
     });
   });
-</script>
-
-<script>
-  document.querySelectorAll('.service-menu .dropdown-item')
-    .forEach(item => {
-      item.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        const dropdown = this.closest('.dropdown');
-        dropdown.querySelector('.btn-text').textContent = this.textContent;
-      });
-    });
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -184,7 +160,7 @@
 
 <script>
   document.getElementById('contactForm').addEventListener('submit', function(e) {
-    const termsCheckbox = document.getElementById('terms');
+    var termsCheckbox = document.getElementById('terms');
 
     if (!termsCheckbox.checked) {
       e.preventDefault();
@@ -197,14 +173,64 @@
       });
       return false;
     }
+
+    Swal.fire({
+      title: 'Sending...',
+      html: 'Please wait while we process your message',
+      didOpen: function() {
+        Swal.showLoading();
+      },
+      showConfirmButton: false,
+      allowOutsideClick: false,
+      allowEscapeKey: false,
+      allowEnterKey: false
+    });
+  });
+
+  window.addEventListener('DOMContentLoaded', function() {
+    <?php if (isset($_SESSION['form_success'])): ?>
+      var successModalEl = document.getElementById('contsuccess');
+      var successModal = new window.bootstrap.Modal(successModalEl);
+      successModal.show();
+      document.getElementById('contactForm').reset();
+      document.getElementById('selectedService').innerText = 'Service of interest';
+      <?php unset($_SESSION['form_success']); ?>
+    <?php endif; ?>
+
+    <?php if (isset($_SESSION['form_error'])): ?>
+      <?php if ($_SESSION['form_error'] === 'terms'): ?>
+        Swal.fire({
+          icon: 'warning',
+          title: 'Privacy Policy Agreement Required!',
+          html: 'You must agree to our <a href="privacy.php" target="_blank" style="color: #007bff; text-decoration: underline;">Privacy Policy</a> to submit this form.',
+          confirmButtonColor: '#ffc107',
+          confirmButtonText: 'I Understand'
+        });
+      <?php else: ?>
+        document.getElementById('errorMessage').innerText = '<?php echo addslashes($_SESSION['form_error']); ?>';
+        var errorModalEl = document.getElementById('conterror');
+        var errorModal = new window.bootstrap.Modal(errorModalEl);
+        errorModal.show();
+      <?php endif; ?>
+      <?php unset($_SESSION['form_error']); ?>
+    <?php endif; ?>
+
+    <?php if (isset($_SESSION['form_warning'])): ?>
+      var warningMsg = '';
+      <?php if ($_SESSION['form_warning'] === 'partial_user'): ?>
+        warningMsg = 'Your message was received, but we couldn\'t send you a confirmation email. We will still get back to you soon!';
+      <?php elseif ($_SESSION['form_warning'] === 'partial_admin'): ?>
+        warningMsg = 'We sent you a confirmation email, but there was an issue with our internal notification. Please call us if urgent.';
+      <?php endif; ?>
+      document.getElementById('warningMessage').innerText = warningMsg;
+      var warningModalEl = document.getElementById('contwarning');
+      var warningModal = new window.bootstrap.Modal(warningModalEl);
+      warningModal.show();
+      document.getElementById('contactForm').reset();
+      document.getElementById('selectedService').innerText = 'Service of interest';
+      <?php unset($_SESSION['form_warning']); ?>
+    <?php endif; ?>
   });
 </script>
-
-<?php
-// Include the contact form handler
-include 'contact_handler.php';
-?>
-
-
 
 <?php include 'includes/footer.php'; ?>
