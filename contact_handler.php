@@ -18,7 +18,7 @@ define('MAIL_USERNAME', 'info@theprojectcompanyllc.com');
 define('MAIL_PASSWORD', 'test@123@#');
 define('MAIL_ENCRYPTION', 'null');
 define('MAIL_FROM_ADDRESS', 'info@theprojectcompanyllc.com');
-define('MAIL_FROM_NAME', 'theprojectcompanyllc.');
+define('MAIL_FROM_NAME', 'relevantmanagement.');
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
@@ -27,8 +27,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
     $email = $_POST['email'] ?? '';
     $phone = $_POST['phone'] ?? '';
     $company = $_POST['company'] ?? '';
+    $service_of_interest = $_POST['service_of_interest'] ?? '';
     $message = $_POST['message'] ?? '';
     $terms = isset($_POST['terms']);
+
     
     // Basic validation
     if (empty($full_name) || empty($email) || empty($phone) || empty($message)) {
@@ -209,6 +211,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
                     <div class='value'>" . htmlspecialchars($company ?: 'Not provided') . "</div>
                 </div>
                 <div class='field'>
+                    <div class='label'>🏢 Service of Interest:</div>
+                    <div class='value'>" . htmlspecialchars($service_of_interest) . "</div>
+                </div>
+                <div class='field'>
                     <div class='label'>💬 Message:</div>
                     <div class='value'>" . nl2br(htmlspecialchars($message)) . "</div>
                 </div>
@@ -227,7 +233,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
     ";
     
     // User email configuration
-    $user_subject = 'Thank you for contacting The Project Company L.L.C-FZ - We\'ll be in touch soon!';
+    $user_subject = 'Thank you for contacting relevantmanagement - We\'ll be in touch soon!';
     
     // User email body
     $user_body = "
@@ -275,27 +281,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
                     <p><strong>Email:</strong> " . htmlspecialchars($email) . "</p>
                     <p><strong>Phone:</strong> " . htmlspecialchars($phone) . "</p>
                     " . ($company ? "<p><strong>Company:</strong> " . htmlspecialchars($company) . "</p>" : "") . "
+                    <p><strong>Service of Interest:</strong> " . htmlspecialchars($service_of_interest) . "</p>
                     <p><strong>Message:</strong> " . htmlspecialchars(substr($message, 0, 200)) . (strlen($message) > 200 ? '...' : '') . "</p>
                     <p><strong>Submitted:</strong> " . date('F j, Y \a\t g:i A T') . "</p>
                 </div>
                 
                 <div class='contact-info'>
                     <h3>📞 Need immediate assistance?</h3>
-                    <p><strong>Email:</strong> support@theprojectcompanyllc.com</p>
-                    <p><strong>Address:</strong> Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai, U.A.E.</p>
+                    <p><strong>Email:</strong> Contact@relevantmanagement.com</p>
+                    <p><strong>Address:</strong> Relevant Management FZCO, Unit 78340-001, Building A1, IFZA<br>Business Park, Dubai Digital Park, Dubai Silicon Oasis, Dubai, UAE</p>
                 </div>
                 
-                <p>We're excited to learn more about your project and explore how The Project Company L.L.C-FZ can help transform your back-office operations for lasting success.</p>
+                <p>We're excited to learn more about your project and explore how The Relevant Management  can help transform your back-office operations for lasting success.</p>
                 
                 <p>Best regards,<br>
-                <strong>The Project Company L.L.C-FZ Team</strong></p>
+                <strong>relevantmanagement Team</strong></p>
             </div>
             
             <div class='footer'>
                 <p>This is an automated confirmation email. Please do not reply to this message.</p>
-                <p>If you have any questions, please contact us at <a href='mailto:support@theprojectcompanyllc.com'>support@theprojectcompanyllc.com</a></p>
+                <p>If you have any questions, please contact us at <a href='mailto:Contact@relevantmanagement.com'>Contact@relevantmanagement.com</a></p>
                 <p style='margin-top: 15px; font-size: 12px;'>
-                    © 2025 The Project Company L.L.C-FZ. All rights reserved.<br>
+                    © 2026 relevantmanagement. All rights reserved.<br>
                    
                 </p>
             </div>
