@@ -11,14 +11,14 @@ use PHPMailer\PHPMailer\Exception;
 
 
 // SMTP Configuration
-define('MAIL_DRIVER', 'smtp');
+/*define('MAIL_DRIVER', 'smtp');
 define('MAIL_HOST', '212.28.183.181');
 define('MAIL_PORT', 587);
 define('MAIL_USERNAME', 'info@theprojectcompanyllc.com');
 define('MAIL_PASSWORD', 'test@123@#');
 define('MAIL_ENCRYPTION', 'null');
 define('MAIL_FROM_ADDRESS', 'info@theprojectcompanyllc.com');
-define('MAIL_FROM_NAME', 'relevantmanagement.');
+define('MAIL_FROM_NAME', 'relevantmanagement.');*/
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
@@ -84,9 +84,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
     }
     
     // Verify hCaptcha using cURL
-    $hcaptcha_secret = 'ES_0114ceb415b247a0a208c71ffbfe2dd8';
-    $hcaptcha_response = $_POST['h-captcha-response'];
-    $hcaptcha_remoteip = $_SERVER['REMOTE_ADDR'];
+    // $hcaptcha_secret = 'ES_0114ceb415b247a0a208c71ffbfe2dd8';
+    // $hcaptcha_response = $_POST['h-captcha-response'];
+    // $hcaptcha_remoteip = $_SERVER['REMOTE_ADDR'];
     
     $hcaptcha_url = 'https://hcaptcha.com/siteverify';
     $hcaptcha_data = array(
