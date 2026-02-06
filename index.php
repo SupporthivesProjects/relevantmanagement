@@ -4,8 +4,8 @@
 <section class="home-banner">
     <img src="./img/herobgimgmask.png" alt="" class="img-fluid d-lg-block d-md-block d-none">
     <img src="./img/img-wrapper-mo.png" alt="" class="img-fluid d-lg-none d-md-none d-block">
-    <div class="container p-mo">
-        <div class="col">
+    <div class="container p-mo" style="position: relative; z-index: -1;">
+        <div class="col" style="position: relative; z-index: -1;">
             <div class="home-banner-content"  data-aos="fade-up">
                 <div class="home-banner-content-main">
                     <h2>
