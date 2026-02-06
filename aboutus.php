@@ -6,10 +6,12 @@
     
 </style>
 <section class="abov_upper1">
-    <video class="left_vid d-lg-block d-md-block d-none " width="100%" height="100%" autoplay muted loop>
+    <!-- <video class="left_vid d-lg-block d-md-block d-none " width="100%" height="100%" autoplay muted loop>
         <source src="img/ab_top_leftcorner.mp4" type="">
         Your browser does not support the video tag.
-    </video>
+    </video> -->
+            <img src="./img/Image.png" alt="" class="left_vid d-lg-block d-md-block d-none">
+
     <img src="./img/right_abv.png" alt="" class="top_img d-lg-block d-md-block d-none ">
     <div class="container px-0" data-aos="fade-up">
         <video class="right_vid d-lg-none d-md-none d-block " width="100%" height="100%" autoplay muted loop>
@@ -21,10 +23,11 @@
                 to complex project delivery.</h4>
             <h4 class="tittle_ab d-lg-none d-md-none d-block">We exist to bring clarity
                 to complex project delivery.</h4>
-            <video class="left_vid d-lg-none d-md-none d-block " width="100%" height="100%" autoplay muted loop>
-                <source src="img/ab_top_leftcorner.mp4" type="">
+             <!-- <video class="left_vid d-lg-none d-md-none d-block " width="100%" height="100%" autoplay muted loop>
+                <source src="img/ab_top_leftcorner.mp4" type=""> 
                 Your browser does not support the video tag.
-            </video>
+            </video> -->
+                        <img src="./img/Image_mob.png" alt="" class="left_vid d-lg-none d-md-none d-block">
             <div class="left_text" data-aos="fade-up">
                 <h6 class="inter_sub">
                     Through structured leadership, disciplined planning, and calm execution at
