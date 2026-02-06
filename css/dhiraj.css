@@ -109,6 +109,7 @@
 /* Base button */
 .browwn_how {
   display: flex;
+  text-decoration: none;
   width: 300px;
   height: 64px;
   padding: 20px 45px;

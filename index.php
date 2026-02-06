@@ -17,11 +17,11 @@
                         projects with clarity and control. Every 
                         detail orchestrated with precision.
                     </p>
-                    <button class="btn btn-gold  btn-31" type="submit">
+                    <a href="Contact_us.php" class="btn btn-gold  btn-31" type="submit">
                         <span class="text-container">
                             <span class="text">Request Consultation</span>
                         </span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -83,11 +83,11 @@
                                 </p>
                             </div>
                         </div>
-                        <button class="btn btn-gold  btn-31" type="submit">
+                        <a  href="aboutus.php" class="btn btn-gold  btn-31" type="submit">
                             <span class="text-container">
                                 <span class="text">More about us</span>
                             </span>
-                        </button>
+</a>
                     </div>
                 </div>
             </div>
@@ -276,11 +276,11 @@
                             No noise, no over-complication, just disciplined project leadership 
                             focused on outcomes.
                         </p>
-                        <button class="btn btn-gold  btn-31" type="submit"  data-aos="fade-up">
+                        <a href="Contact_us.php" class="btn btn-gold  btn-31" type="submit"  data-aos="fade-up">
                             <span class="text-container">
                                 <span class="text">start today</span>
                             </span>
-                        </button>
+</a>
                      </div>
                  </div>
                  <div class="col-lg-6 col-md-12 col-sm-12 col-12 img-wrapper"  data-aos="fade-up">
@@ -353,11 +353,11 @@
                                 </div>
                             </div>
                          </div>
-                         <button class="btn btn-gold  btn-31" type="submit"  data-aos="fade-up">
+                         <a href="aboutus.php" class="btn btn-gold  btn-31" type="submit"  data-aos="fade-up">
                             <span class="text-container">
                                 <span class="text">our story</span>
                             </span>
-                        </button>
+</a>
                     </div>
                 </div>
             </div>

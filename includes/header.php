@@ -64,11 +64,11 @@
                     delivered with precision
                   </p>
                 </div>
-                <button class="btn btn-gold d-lg-flex d-md-flex d-none btn-31" type="submit">
+                <a href="Contact_us.php" class="btn btn-gold d-lg-flex d-md-flex d-none btn-31" type="submit">
                   <span class="text-container">
                       <span class="text">Get started</span>
                   </span>
-                </button>
+</a>
                 <button class="btn btn-gold d-lg-none d-md-none d-flex btn-31" type="submit">Contact</button>
               </div>
             </div>

@@ -27,11 +27,11 @@
                     <h1 class="service_s1title">Structured Project Management For Predictable, High-Performance Delivery</h1>
                     <p class="service_s1subtitle">We lead complex projects with clear ownership, disciplined planning, and precise execution, ensuring timelines, budgets, and outcomes remain fully controlled.</p>
                     <div class="d-flex right-side-main" role="search">
-                        <button class="btn btn-gold d-lg-flex d-md-flex btn-31 ser_btn" type="submit">
+                        <a href="#serv3" class="btn btn-gold d-lg-flex d-md-flex btn-31 ser_btn" type="submit">
                         <span class="text-container">
                             <span class="text">View&nbsp;services&nbsp;below</span>
                         </span>
-                        </button>
+</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
     <!-- Partion Line -->
     <img class="mobile_none" style="height: 24px; width: 100%;" src="img/partion_line.png">
     <!-- Section 3 -->
-     <section class="process-section">
+     <section class="process-section" id="serv3">
         <div class="process-container">
 
             <!-- LEFT IMAGE -->
@@ -89,11 +89,11 @@
                 </video>
                 <div class="mobile_none w-100">
                     <div class="d-flex right-side-main" role="search">
-                        <button class="btn btn-gold d-lg-flex d-md-flex btn-31 ser_btn w-100" type="submit">
+                        <a href="Contact_us.php" class="btn btn-gold d-lg-flex d-md-flex btn-31 ser_btn w-100" type="submit">
                         <span class="text-container">
                             <span class="text">Request consultation</span>
                         </span>
-                        </button>
+</a>
                     </div>
                 </div>
             </div>

@@ -36,11 +36,11 @@
                     projects are delivered predictably, efficiently, and with confidence.
                 </p>
                 <!-- <button class="browwn_how">Get started</button> -->
-                <button class="browwn_how">
+                <a href="Contact_us.php" class="browwn_how">
                     <span class="text-container">
                         <span class="text">Get started</span>
                     </span>
-                </button>
+</a>
             </div>
         </div>
     </div>
@@ -72,11 +72,11 @@
                         projects are delivered predictably, efficiently, and with confidence.
                     </p>
                     <!-- <button class="browwn_how">Get started</button> -->
-                    <button class="browwn_how">
+                    <a  href="service.php" class="browwn_how">
                         <span class="text-container">
                             <span class="text">Explore solutions</span>
                         </span>
-                    </button>
+</a>
 
                 </div>
             </div>
@@ -181,11 +181,11 @@
                     acceptance and electronic transactions, giving merchants the tools they need to operate
                     confidently across the EEA.
                 </p>
-                <button class="browwn_how">
+                <a href="Contact_us.php" class="browwn_how">
                     <span class="text-container">
                         <span class="text">Contact Us</span>
                     </span>
-                </button>
+</a>
             </div>
             <div class="right_last_bx">
                 <video class="right_vid3" width="100%" height="100%" autoplay muted loop>
