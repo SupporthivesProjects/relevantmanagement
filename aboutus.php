@@ -10,7 +10,7 @@
         <source src="img/ab_top_leftcorner.mp4" type="">
         Your browser does not support the video tag.
     </video> -->
-            <img src="./img/Image.png" alt="" class="left_vid d-lg-block d-md-block d-none">
+     <img src="./img/Image.png" alt="" class="left_vid d-lg-block d-md-block d-none">
 
     <img src="./img/right_abv.png" alt="" class="top_img d-lg-block d-md-block d-none ">
     <div class="container px-0" data-aos="fade-up">
@@ -191,11 +191,13 @@
 </a>
             </div>
             <div class="right_last_bx">
-                <video class="right_vid3" width="100%" height="100%" autoplay muted loop>
-                    <source src="img/handsome-arabic-entrepreneur-businessmen-sitting-a-4k-2026-01-22-17-21-39-utc.mp4"
-                        type="">
-                    Your browser does not support the video tag.
-                </video>
+                 <!-- <video class="right_vid3" width="100%" height="100%" autoplay muted loop>
+                        <source
+                            src="img/handsome-arabic-entrepreneur-businessmen-sitting-a-4k-2026-01-22-17-21-39-utc.mp4"
+                            type="">
+                        Your browser does not support the video tag.
+                    </video> -->
+        <img src="./img/sheikh.png" alt="" class="right_vid3 d-lg-block d-md-block d-none ">
             </div>
         </div>
     </div>
