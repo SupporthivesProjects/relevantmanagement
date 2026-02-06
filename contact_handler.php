@@ -196,13 +196,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_contact'])) {
         <div class='container'>
             <div class='header'>
                 <h1 style='margin: 0; font-size: 28px;'>✅ Message Received!</h1>
-                <p style='margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;'>Thank you for reaching out to The Project Company L.L.C-FZ</p>
+                <p style='margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;'>Thank you for reaching out to Relevant Management</p>
             </div>
 
             <div class='content'>
                 <h2>Hello " . htmlspecialchars($full_name) . ",</h2>
 
-                <p>Thank you for contacting <strong>The Project Company L.L.C-FZ</strong>! We have successfully received your message and appreciate you taking the time to reach out to us.</p>
+                <p>Thank you for contacting <strong>Relevant Management</strong>! We have successfully received your message and appreciate you taking the time to reach out to us.</p>
 
                 <div class='highlight-box'>
                     <h3>🚀 What happens next?</h3>

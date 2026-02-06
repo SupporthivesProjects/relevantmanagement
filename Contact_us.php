@@ -63,8 +63,8 @@ include 'includes/header.php';
           </div>
           <div class="re-btn">
             <div class="h-captcha recapcha" data-sitekey="6d544706-a634-41da-a362-eb48f08a7876" style="height:74px; transform: scale(0.7);"></div>
-            <button class="cont-btn btn btn-gold btn-31 aos-init aos-animate" type="submit" name="submit_contact">
-              <a href="#" class="text">Confirm</a>
+            <button class="cont-btn btn btn-gold btn-31 aos-init aos-animate " type="submit" name="submit_contact">
+              <a  class="text">Confirm</a>
             </button>
           </div>
         </div>
